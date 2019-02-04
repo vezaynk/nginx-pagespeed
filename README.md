@@ -14,7 +14,8 @@ This does have the downside that the average user would have a hard time taking 
 
 The main change in question is, of course, the inclusion of the Pagespeed module.
 
-## Install from GitHub
+## Installation
+### Install from GitHub
 
 The fastest way to get going is to use my prebuilt packages. Simply clone this repository and install whatever version you need. 
 
@@ -32,7 +33,7 @@ Holding the package will allow
 sudo apt-mark hold nginx-full
 ```
 
-## Install from Repository (Experimental)
+### Install from Repository (Experimental)
 
 I have a hard time suggesting anyone to actually do this, but hey! Why not, right?
 
@@ -41,7 +42,7 @@ I'm trying to get some sort of fancy packaging system up and running, but for th
 To have a go at it, add `deb [trusted=yes] https://deb.knyazev.io/latest/ /` to your `sources.list` and install whatever you need.
 
 
-## Compile from Source!
+### Compile from Source!
 
 The process to patch Debian's NGINX is straight-forward but strangly undocumented. I suppose this is the case because people fall into one of two camps: Those who have no idea and those for whom this is trivial which ends up not producing any documentation whatsoever. My friends, worry not. I am here to change that.
 
@@ -99,3 +100,34 @@ Last but not least, we don't want our package manager to undo all our hard work 
 ```bash
 sudo apt-mark hold nginx-full
 ```
+
+## Usage
+
+There are more than enough guides around Pagespeed, so I'll just hand you the configuration that I personally use:
+
+```
+pagespeed on;
+pagespeed FileCachePath              "/var/cache/pagespeed/";
+pagespeed FileCacheSizeKb            102400;
+pagespeed FileCacheCleanIntervalMs   3600000;
+pagespeed FileCacheInodeLimit        500000;
+pagespeed FetchHttps enable;
+pagespeed EnableFilters collapse_whitespace;
+pagespeed EnableFilters combine_heads;
+pagespeed EnableFilters combine_javascript;
+pagespeed EnableFilters extend_cache;
+pagespeed EnableFilters extend_cache_pdfs;
+pagespeed EnableFilters flatten_css_imports;
+pagespeed EnableFilters hint_preload_subresources;
+pagespeed EnableFilters inline_css;
+pagespeed EnableFilters inline_import_to_link;
+pagespeed EnableFilters resize_mobile_images;
+pagespeed EnableFilters responsive_images;
+pagespeed EnableFilters rewrite_css;
+pagespeed EnableFilters move_css_above_scripts;
+pagespeed EnableFilters inline_import_to_link
+```
+
+I have placed it in `/etc/nginx/conf.d` from where all files get included.
+
+I have yet to hit a single issue with this configuration.
