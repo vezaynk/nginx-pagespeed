@@ -17,13 +17,13 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Update apt
-        run: sudo apt-get update
+        run: apt-get update
         
       - name: Upgrade apt
-        run: sudo apt-get upgrade
+        run: apt-get upgrade
       # Runs a set of commands using the runners shell
       - name: Install dependencies
-        run: sudo apt install debhelper-compat dpkg-dev libexpat-dev
+        run: apt install debhelper-compat dpkg-dev libexpat-dev
                               libgd-dev libgeoip-dev libhiredis-dev
                               libluajit-5.1-dev libmaxminddb-dev
                               libmhash-dev libpam0g-dev
@@ -48,7 +48,7 @@ jobs:
            sed -i 's/\-\-with\-debug//' nginx/debian/rules
 
       - name: Build Package
-        run: sudo dpkg-buildpackage -rfakeroot -uc -b
+        run: dpkg-buildpackage -rfakeroot -uc -b
         working-directory: nginx
 
       - name: Show result
