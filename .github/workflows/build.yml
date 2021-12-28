@@ -17,13 +17,13 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Update apt
-        run: apt-get update
+        run: apt-get -y update
         
       - name: Upgrade apt
-        run: apt-get upgrade
+        run: apt-get -y upgrade
       # Runs a set of commands using the runners shell
       - name: Install dependencies
-        run: apt install debhelper-compat dpkg-dev libexpat-dev
+        run: apt install -y debhelper-compat dpkg-dev libexpat-dev
                               libgd-dev libgeoip-dev libhiredis-dev
                               libluajit-5.1-dev libmaxminddb-dev
                               libmhash-dev libpam0g-dev
@@ -31,6 +31,7 @@ jobs:
                               libssl-dev libxslt1-dev
                               po-debconf quilt 
                               zlib1g-dev debhelper
+                              wget git
                               
       - name: Download all resources
         run: |
