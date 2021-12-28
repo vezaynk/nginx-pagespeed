@@ -16,15 +16,17 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: Update apt
+        run: sudo apt-get update -y
       # Runs a set of commands using the runners shell
       - name: Install dependencies
-        run: sudo apt install debhelper-compat dpkg-dev libexpat-dev \
-                              libgd-dev libgeoip-dev libhiredis-dev \
-                              libluajit-5.1-dev libmaxminddb-dev \
-                              libmhash-dev libpam0g-dev \
-                              libpcre3-dev libperl-dev \
-                              libssl-dev libxslt1-dev \
-                              po-debconf quilt \
+        run: sudo apt install debhelper-compat dpkg-dev libexpat-dev
+                              libgd-dev libgeoip-dev libhiredis-dev
+                              libluajit-5.1-dev libmaxminddb-dev
+                              libmhash-dev libpam0g-dev
+                              libpcre3-dev libperl-dev
+                              libssl-dev libxslt1-dev
+                              po-debconf quilt
                               zlib1g-dev debhelper-compat
                               
       - name: Download all resources
