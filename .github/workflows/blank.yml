@@ -1,0 +1,39 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Runs a set of commands using the runners shell
+      - name: Download all resources
+        run: |
+          git clone https://salsa.debian.org/nginx-team/nginx.git
+          cd nginx/debian/modules
+          git clone https://github.com/apache/incubator-pagespeed-ngx.git
+          cd incubator-pagespeed-ngx
+          git checkout tags/latest-stable
+          echo `echo wget -O psol.tar.gz; cat PSOL_BINARY_URL` | BIT_SIZE_NAME=x64 bash
+          tar -xzvf psol.tar.gz
+          sed -i 's/\-\-with\-threads/\-\-with-threads \-\-add\-module=\$(MODULESDIR)\/incubator\-pagespeed\-ngx/' ../../rules
+          cd ../../..
+          sudo apt install dpkg-dev libexpat-dev libgd-dev libgeoip-dev libhiredis-dev libluajit-5.1-dev libmaxminddb-dev libmhash-dev libpam0g-dev libpcre3-dev libperl-dev libssl-dev libxslt1-dev po-debconf quilt zlib1g-dev debhelper-compat
+          sudo dpkg-buildpackage -rfakeroot -uc -b
+          
