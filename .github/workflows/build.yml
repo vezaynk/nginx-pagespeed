@@ -38,7 +38,10 @@ jobs:
       - name: Download all resources
         run: |
           git clone https://salsa.debian.org/nginx-team/nginx.git
-          cd nginx/debian/modules
+          cd nginx
+          NGINX_TAG=$(git describe --tags `git rev-list --tags` | grep upstream | head -n 1)
+          git checkout $NGINX_TAG
+          cd debian/modules
           git clone https://github.com/apache/incubator-pagespeed-ngx.git
           cd incubator-pagespeed-ngx
           git checkout tags/latest-stable
@@ -47,8 +50,10 @@ jobs:
           
       - name: Patch rules
         run: |
-           sed -i 's/\-\-with\-threads/\-\-with-threads \-\-add\-module=\$(MODULESDIR)\/incubator\-pagespeed\-ngx/' nginx/debian/rules
-           sed -i 's/\-\-with\-debug//' nginx/debian/rules
+           sed -i 's/\-\-with\-threads/\-\-with-threads \-\-add\-module=\$(MODULESDIR)\/incubator\-pagespeed\-ngx/' rules
+           sed -i 's/\-\-with\-debug//' rules
+           
+        working-directory: nginx/debian
 
       - name: Build Package
         run: sudo dpkg-buildpackage -rfakeroot -uc -b
