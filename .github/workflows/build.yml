@@ -14,7 +14,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     #container: ubuntu:21.04
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -25,7 +25,7 @@ jobs:
         run: sudo apt-get -y upgrade
       # Runs a set of commands using the runners shell
       - name: Install dependencies
-        run: sudo apt install -y debhelper/bionic-backports dwz/bionic-backports
+        run: sudo apt install -y debhelper/focal-backports dwz/focal-backports
                               libgd-dev libgeoip-dev libhiredis-dev
                               libluajit-5.1-dev libmaxminddb-dev
                               libmhash-dev libpam0g-dev
