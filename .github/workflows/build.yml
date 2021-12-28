@@ -17,6 +17,16 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Runs a set of commands using the runners shell
+      - name: Install dependencies
+        run: sudo apt install debhelper-compat dpkg-dev libexpat-dev \
+                              libgd-dev libgeoip-dev libhiredis-dev \
+                              libluajit-5.1-dev libmaxminddb-dev \
+                              libmhash-dev libpam0g-dev \
+                              libpcre3-dev libperl-dev \
+                              libssl-dev libxslt1-dev \
+                              po-debconf quilt \
+                              zlib1g-dev debhelper-compat
+                              
       - name: Download all resources
         run: |
           git clone https://salsa.debian.org/nginx-team/nginx.git
@@ -26,8 +36,16 @@ jobs:
           git checkout tags/latest-stable
           echo `echo wget -O psol.tar.gz; cat PSOL_BINARY_URL` | BIT_SIZE_NAME=x64 bash
           tar -xzvf psol.tar.gz
-          sed -i 's/\-\-with\-threads/\-\-with-threads \-\-add\-module=\$(MODULESDIR)\/incubator\-pagespeed\-ngx/' ../../rules
-          cd ../../..
-          sudo apt install debhelper-compat dpkg-dev libexpat-dev libgd-dev libgeoip-dev libhiredis-dev libluajit-5.1-dev libmaxminddb-dev libmhash-dev libpam0g-dev libpcre3-dev libperl-dev libssl-dev libxslt1-dev po-debconf quilt zlib1g-dev debhelper-compat
-          sudo dpkg-buildpackage -rfakeroot -uc -b
           
+      - name: Patch rules
+        run: |
+           sed -i 's/\-\-with\-threads/\-\-with-threads \-\-add\-module=\$(MODULESDIR)\/incubator\-pagespeed\-ngx/' nginx/debian/rules
+           sed -i 's/\-\-with\-debug//' nginx/debian/rules
+
+      - name: Build Package
+        run: sudo dpkg-buildpackage -rfakeroot -uc -b
+        working-directory: nginx
+
+      - name: Show result
+        run: ls
+        working-directory: nginx
