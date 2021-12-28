@@ -25,7 +25,7 @@ jobs:
         run: sudo apt-get -y upgrade
       # Runs a set of commands using the runners shell
       - name: Install dependencies
-        run: sudo apt install -y debhelper/focal-backports
+        run: sudo apt install -y debhelper/focal-backports libdebhelper-perl/focal-backports 
                               libgd-dev libgeoip-dev libhiredis-dev
                               libluajit-5.1-dev libmaxminddb-dev
                               libmhash-dev libpam0g-dev
