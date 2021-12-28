@@ -26,8 +26,8 @@ jobs:
                               libmhash-dev libpam0g-dev
                               libpcre3-dev libperl-dev
                               libssl-dev libxslt1-dev
-                              po-debconf quilt
-                              zlib1g-dev debhelper-compat
+                              po-debconf quilt 
+                              zlib1g-dev debhelper
                               
       - name: Download all resources
         run: |
