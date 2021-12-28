@@ -1,15 +1,9 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Build
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -34,6 +28,6 @@ jobs:
           tar -xzvf psol.tar.gz
           sed -i 's/\-\-with\-threads/\-\-with-threads \-\-add\-module=\$(MODULESDIR)\/incubator\-pagespeed\-ngx/' ../../rules
           cd ../../..
-          sudo apt install dpkg-dev libexpat-dev libgd-dev libgeoip-dev libhiredis-dev libluajit-5.1-dev libmaxminddb-dev libmhash-dev libpam0g-dev libpcre3-dev libperl-dev libssl-dev libxslt1-dev po-debconf quilt zlib1g-dev debhelper-compat
+          sudo apt install debhelper-compat dpkg-dev libexpat-dev libgd-dev libgeoip-dev libhiredis-dev libluajit-5.1-dev libmaxminddb-dev libmhash-dev libpam0g-dev libpcre3-dev libperl-dev libssl-dev libxslt1-dev po-debconf quilt zlib1g-dev debhelper-compat
           sudo dpkg-buildpackage -rfakeroot -uc -b
           
