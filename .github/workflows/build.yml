@@ -4,8 +4,6 @@ name: Build
 
 # Controls when the workflow will run
 on:
-  push:
-    branches: [] #[ master ]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -74,7 +72,8 @@ jobs:
           dpkg-scanpackages -a all . > Packages
           apt-ftparchive release . > Release
           gpg -a --yes --clearsign --output InRelease --detach-sign Release
-          
+        working-directory: repo/dist
+        
       - name: Upload packages 
         uses: EndBug/add-and-commit@v7 # You can change this to use a specific version.
         with:
