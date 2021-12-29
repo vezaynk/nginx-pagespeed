@@ -1,118 +1,58 @@
-# NGINX + Pagespeed
+# NGINX + Google PageSpeed
 
-This is a repository with the intent of archiving various verious of the Debian variant of nginx pre-packaged with the pagespeed module for your convenience. The availability of of versions will be quite arbitrary: those that I personally use.
+Configuring NGINX to build correctly is a pain. Not because of anything wrong with it, but rather because of how slim the standard install is: no HTTPS, no Web-Sockets, no PAM, etc., since they are all independent modules. While this is sound in principle, it's inconvenient for end-users.
 
-For the unfamiliar, Pagespeed is a great piece of software with makes your website faster by applying a wide-variety of opt-in optimization strategies such as [compression, resizing, inlining and caching among others](https://www.modpagespeed.com/examples/). There is basically no downside to using this.
+Luckily, most distributions fork it, make a few changes and bundle it with everyone's favorite modules. Installing NGINX from your distribution's repositories will always give you a batteries-included configuration. This convenience presents a dilemma: either accept what your distribution gives you and lose the flexibility of customizing your installation or bite the bullet and try to figure everything out yourself.
 
-## Motivation
+I could no longer accept the default installation once I decided to have [Google PageSpeed](https://developers.google.com/speed/pagespeed/module) on my servers. If you're on this repository, I don't think I need to explain the benefits.
 
-Getting NGINX into a comfortable state is a pain. Not because of anything wrong with it, but rather because of how slim the standard install is: no https, no websockets, etc as they are all meant to be modules. While this is a very sound and forward-thinking architecture, it pushes the burden of figuring out a sane setup onto the user most of who just want a working web server.
-
-Luckily, most distributions handle all that stuff in advance by forking it, making a few small changes and bundling it with a dozen modules. Thus we get a more-or-less standardized, batteries-included setup by installing a single package. Wonderous!
-
-This does have the downside that the average user would have a hard time taking a vanilla nginx setup for whatever reason and making a small change as they would have redo all the changes their distributor did as well. This is a pain I have certainly felt many times. By the case of NGINX has frustrated me so much that I decided to do go through the trouble of doing it properly.
-
-The main change in question is, of course, the inclusion of the Pagespeed module.
+There was painfully little documentation on the topic of forking a Debian package, but I managed to piece it together. This repository is the result: a seamless way to substitute Debian-flavored NGINX with Debian-flavored NGINX + PageSpeed. Enjoy!
 
 ## Installation
 
+This installation guide aims to support any modern Debian-based system (including Ubuntu). Open an issue if it doesn't work. The Debian packages are built on Ubuntu 20.04, and should be compatible with newer releases.
+
 ### Download Keys
 
-Download the public key for the packaging service in order to install the packages. The original keys have been destroyed and are now exclusively held by GitHub.
+The GitHub worker signs the packages using the key below. You need to trust them to be able to install the packages.
 
 ```bash
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8028BE1819F3E4A0
 ```
 
-### Install from GitHub
+### Connect Source
 
-The fastest way to get going is to use my prebuilt packages. Simply clone this repository and install whatever version you need.
+Create `/etc/apt/sources.list.d/nginx-pagespeed.list` and put the following line into it:
 
-The most straight-forward way of installing everything as needed is as follows:
-
-```bash
-sudo dpkg -i libnginx-mod-*_1.14.2-2_amd64.deb
-sudo dpkg -i nginx-full_1.14.2-2_amd64.deb
+```
+deb https://nginx-pagespeed.knyz.org/dist/ /
 ```
 
-Be sure to remove any existing NGINX installs beforehand to avoid conflicts.
+This will enable apt to find the PageSpeed-patched versions of NGINX.
 
-Holding the package will allow
+### Pin Source
 
-```bash
-sudo apt-mark hold nginx-full
+To prevent other sources from overwriting NGINX during updates, pin it by creating `/etc/apt/preferences.d/99nginx-pagespeed` and placing the following inside of it:
+
+```
+Package: *
+Pin: origin http://nginx-pagespeed.knyz.org/
+Pin-Priority: 900
 ```
 
-### Install from Repository (Experimental)
+This will make apt unconditionally prefer PageSpeed-patched versions of NGINX.
 
-I have a hard time suggesting anyone to actually do this, but hey! Why not, right?
+### Installing
 
-I'm trying to get some sort of fancy packaging system up and running, but for the moment, it's not great. I will shoe-horn it once it's nicer.
+- Run `sudo apt update`, look out for any errors.
+- Run `apt-cache policy nginx-full`, validate that the selected candidate is from `nginx-pagespeed.knyz.org`.
+- Run `sudo apt install nginx-full`, or `nginx-light` depending on what you're looking for
 
-To have a go at it, add `deb [trusted=yes] https://deb.knyazev.io/latest/ /` to your `sources.list` and install whatever you need.
-
-### Compile from Source!
-
-The process to patch Debian's NGINX is straight-forward but strangly undocumented. I suppose this is the case because people fall into one of two camps: Those who have no idea and those for whom this is trivial which ends up not producing any documentation whatsoever. My friends, worry not. I am here to change that.
-
-Of course, all of this is unnecessary if the version of debian you seek has already been patched in this repository. Ideally, I would have you do this in a clone of this repository, but that is not a burden I wish to impose until there are tangible benefits to using it beyond a single store.
-
-Nonetheless, the entire process generates a lot of files in the working directory, so I will have to insist on you creating a new working directory for sake of the preservation of your sanity.
-
-The first thing to do is to get your hands on the the NGINX source from Debian, Pagespeed from Apache and prepare it for use:
-
-```bash
-git clone https://salsa.debian.org/nginx-team/nginx.git
-cd nginx/debian/modules
-git clone https://github.com/apache/incubator-pagespeed-ngx
-cd incubator-pagespeed-nginx
-git checkout 11ba8ea ## Find current hash: https://github.com/apache/incubator-pagespeed-ngx/releases/tag/latest-stable
-echo `echo wget -O psol.tar.gz; cat PSOL_BINARY_URL` | BIT_SIZE_NAME=x64 bash
-tar -xzvf psol.tar.gz
-```
-
-The above process uses the latest release, but that is not necessary. You can compile the `psol` locally instead of downloading them. This however, is a time consuming process which is more likely to break.
-
-The second thing to do is to patch NGINX's build rules by finding the declaration of the `common_configure-flags` variable in `debian/rules` and appending `--add-module=$(MODULESDIR)/incubator-pagespeed-ngx` to it:
-
-```bash
-# configure flags
-common_configure_flags := \
---with-cc-opt="$(debian_cflags)" \
---with-ld-opt="$(debian_ldflags)" \
---prefix=/usr/share/nginx \
-***SNIP***
---with-http_v2_module \
---with-http_dav_module \
---with-http_slice_module \
---with-threads \
---add-module=$(MODULESDIR)/incubator-pagespeed-ngx ## Add me ##
-```
-
-Then we build:
-
-```bash
-sudo dpkg-buildpackage -rfakeroot -uc -b
-```
-
-The above command may occasionally prompt you to use the Release binaries to which you probably want to say `[Y]es`. Also it will take a really long time.
-
-Once that is done, you may install. If you have a previous installation, remove `nginx-full` and everything relating to it. After that, you may install the new packages:
-
-```bash
-sudo dpkg -i libnginx-mod-*_1.14.2-2_amd64.deb
-sudo dpkg -i nginx-full_1.14.2-2_amd64.deb
-```
-
-Last but not least, we don't want our package manager to undo all our hard work in the next update, so lets prevent that:
-
-```bash
-sudo apt-mark hold nginx-full
-```
+Done!
 
 ## Usage
 
-There are more than enough guides around Pagespeed, so I'll just hand you the configuration that I personally use:
+There are more than enough guides around PageSpeed. My recommended setup is to place the following file into `/etc/nginx/conf.d/pagespeed.conf`:
 
 ```
 pagespeed on;
@@ -134,9 +74,7 @@ pagespeed EnableFilters resize_mobile_images;
 pagespeed EnableFilters responsive_images;
 pagespeed EnableFilters rewrite_css;
 pagespeed EnableFilters move_css_above_scripts;
-pagespeed EnableFilters inline_import_to_link
+pagespeed EnableFilters inline_import_to_link;
 ```
 
-I have placed it in `/etc/nginx/conf.d` from where all files get included.
-
-I have yet to hit a single issue with this configuration.
+Remember to run `sudo systemctl reload nginx` after any changes.
