@@ -69,7 +69,7 @@ jobs:
         run: | 
           echo ${{ secrets.GPG_PUBLIC }} | base64 -d | gpg --import
           echo ${{ secrets.GPG_PRIVATE }} | base64 -d | gpg --import
-          dpkg-scanpackages -a all . > Packages
+          dpkg-scanpackages . > Packages
           apt-ftparchive release . > Release
           gpg -a --yes --clearsign --output InRelease --detach-sign Release
         working-directory: repo/dist
