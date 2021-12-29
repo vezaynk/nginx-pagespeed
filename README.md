@@ -15,9 +15,18 @@ This does have the downside that the average user would have a hard time taking 
 The main change in question is, of course, the inclusion of the Pagespeed module.
 
 ## Installation
+
+### Download Keys
+
+Download the public key for the packaging service in order to install the packages. The original keys have been destroyed and are now exclusively held by GitHub.
+
+```bash
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8028BE1819F3E4A0
+```
+
 ### Install from GitHub
 
-The fastest way to get going is to use my prebuilt packages. Simply clone this repository and install whatever version you need. 
+The fastest way to get going is to use my prebuilt packages. Simply clone this repository and install whatever version you need.
 
 The most straight-forward way of installing everything as needed is as follows:
 
@@ -28,7 +37,8 @@ sudo dpkg -i nginx-full_1.14.2-2_amd64.deb
 
 Be sure to remove any existing NGINX installs beforehand to avoid conflicts.
 
-Holding the package will allow 
+Holding the package will allow
+
 ```bash
 sudo apt-mark hold nginx-full
 ```
@@ -40,7 +50,6 @@ I have a hard time suggesting anyone to actually do this, but hey! Why not, righ
 I'm trying to get some sort of fancy packaging system up and running, but for the moment, it's not great. I will shoe-horn it once it's nicer.
 
 To have a go at it, add `deb [trusted=yes] https://deb.knyazev.io/latest/ /` to your `sources.list` and install whatever you need.
-
 
 ### Compile from Source!
 
