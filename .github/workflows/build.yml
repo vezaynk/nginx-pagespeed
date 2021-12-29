@@ -4,8 +4,6 @@ name: Build
 
 # Controls when the workflow will run
 on:
-  push:
-    branches: [] #[ master ]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -33,7 +31,7 @@ jobs:
                               libssl-dev libxslt1-dev
                               po-debconf quilt 
                               zlib1g-dev dpkg-dev libexpat-dev
-                              wget git
+                              wget git gpg
                               
       - name: Download all resources
         run: |
@@ -66,6 +64,15 @@ jobs:
           
       - name: Move packages to repository
         run: mkdir -p repo/dist && mv *.deb repo/dist
+        
+      - name: Build Repository
+        run: | 
+          echo ${{ secrets.GPG_PUBLIC }} | base64 -d | gpg --import
+          echo ${{ secrets.GPG_PRIVATE }} | base64 -d | gpg --import
+          dpkg-scanpackages . > Packages
+          apt-ftparchive release . > Release
+          gpg -a --yes --clearsign --output InRelease --detach-sign Release
+        working-directory: repo/dist
         
       - name: Upload packages 
         uses: EndBug/add-and-commit@v7 # You can change this to use a specific version.

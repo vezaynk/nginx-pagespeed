@@ -1,0 +1,112 @@
+Package: nginx
+Version: 1.18.0-7
+Architecture: all
+Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
+Installed-Size: 39
+Depends: nginx-core (<< 1.18.0-7.1~) | nginx-full (<< 1.18.0-7.1~) | nginx-light (<< 1.18.0-7.1~) | nginx-extras (<< 1.18.0-7.1~), nginx-core (>= 1.18.0-7) | nginx-full (>= 1.18.0-7) | nginx-light (>= 1.18.0-7) | nginx-extras (>= 1.18.0-7)
+Filename: ./nginx_1.18.0-7_all.deb
+Size: 27172
+MD5sum: c8b5c642b9a4b3428500e3f4602e9e9f
+SHA1: f36a7975ba8df4cb5dda8dfc2b2fb5a27ea86284
+SHA256: 3ec58a1361e0f61fe7fd72ec78812fd57f185879d674109d43b7f68f3faf48d2
+Section: httpd
+Priority: optional
+Homepage: https://nginx.net
+Description: small, powerful, scalable web/proxy server
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This is a dependency package to install either nginx-core (by default),
+ nginx-full, nginx-light or nginx-extras.
+
+Package: nginx-common
+Source: nginx
+Version: 1.18.0-7
+Architecture: all
+Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
+Installed-Size: 270
+Depends: lsb-base (>= 3.0-6), debconf (>= 0.5) | debconf-2.0
+Suggests: fcgiwrap, nginx-doc, ssl-cert
+Filename: ./nginx-common_1.18.0-7_all.deb
+Size: 59820
+MD5sum: d406fd02e8117a78acd93cbc69d0418a
+SHA1: 7afaa129e36d7e8dfe97d538020427934cabbee7
+SHA256: d611ef5a461c107e7f9ad6b649327275d7c72bac18b88bde1756288f22c83f84
+Section: httpd
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://nginx.net
+Description: small, powerful, scalable web/proxy server - common files
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package contains base configuration files used by all versions of
+ nginx.
+
+Package: nginx-doc
+Source: nginx
+Version: 1.18.0-7
+Architecture: all
+Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
+Installed-Size: 74
+Filename: ./nginx-doc_1.18.0-7_all.deb
+Size: 36052
+MD5sum: 39abdf975a04d535ec833b3dcc440497
+SHA1: b3983a4392bbde040f567708c682aa384d9a9443
+SHA256: 23daa02e53953befb92e2e34ebd38e54bab5eee72e19c34a28ebc3c7b6127915
+Section: doc
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://nginx.net
+Description: small, powerful, scalable web/proxy server - documentation
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides extra documentation to help unleash the power of Nginx.
+
+Package: nginx-full
+Source: nginx
+Version: 1.18.0-7
+Architecture: all
+Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
+Installed-Size: 39
+Depends: libnginx-mod-http-auth-pam, libnginx-mod-http-dav-ext, libnginx-mod-http-echo, libnginx-mod-http-geoip2, libnginx-mod-http-subs-filter, libnginx-mod-http-upstream-fair, libnginx-mod-stream-geoip2, nginx-core (>= 1.18.0-7), nginx-core (<< 1.18.0-7.1~)
+Suggests: nginx-doc (= 1.18.0-7)
+Breaks: nginx (<< 1.4.5-1)
+Provides: httpd, httpd-cgi, nginx
+Filename: ./nginx-full_1.18.0-7_all.deb
+Size: 27680
+MD5sum: ff94a1b7c350f8c22b9b8f2fe8f866f2
+SHA1: 20f1d953bf452f62a7068d76b00fb56c1af786f9
+SHA256: 4fcf2e418559a548b1da18e4d5c5dd5eed37dbd9fa0efd60f87ae8d9fa296ea2
+Section: httpd
+Priority: optional
+Homepage: https://nginx.net
+Description: nginx web/proxy server (standard version with 3rd parties)
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This metapackage provides a version of nginx with the complete set of
+ standard modules included (but omitting some of those included in
+ nginx-extras).
+ .
+ STANDARD HTTP MODULES: Core, Access, Auth Basic, Auto Index, Browser, Empty
+ GIF, FastCGI, Geo, Limit Connections, Limit Requests, Map, Memcached, Proxy,
+ Referer, Rewrite, SCGI, Split Clients, UWSGI.
+ .
+ OPTIONAL HTTP MODULES: Addition, Auth Request, Charset, WebDAV, GeoIP, Gunzip,
+ Gzip, Gzip Precompression, Headers, HTTP/2, Image Filter, Index, Log, Real IP,
+ Slice, SSI, SSL, Stream, SSL Preread, Stub Status, Substitution, Thread  Pool,
+ Upstream, User ID, XSLT.
+ .
+ OPTIONAL MAIL MODULES: Mail Core, Auth HTTP, Proxy, SSL, IMAP, POP3, SMTP.
+ .
+ OPTIONAL STREAM MODULES: Stream Core, GeoIP, GeoIP2
+ .
+ THIRD PARTY MODULES: Auth PAM, DAV Ext, Echo, GeoIP2, HTTP Substitutions
+ Upstream Fair Queue.
+
