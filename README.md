@@ -60,21 +60,7 @@ pagespeed FileCachePath              "/var/cache/pagespeed/";
 pagespeed FileCacheSizeKb            102400;
 pagespeed FileCacheCleanIntervalMs   3600000;
 pagespeed FileCacheInodeLimit        500000;
-pagespeed FetchHttps enable;
-pagespeed EnableFilters collapse_whitespace;
-pagespeed EnableFilters combine_heads;
-pagespeed EnableFilters combine_javascript;
-pagespeed EnableFilters extend_cache;
-pagespeed EnableFilters extend_cache_pdfs;
-pagespeed EnableFilters flatten_css_imports;
-pagespeed EnableFilters hint_preload_subresources;
-pagespeed EnableFilters inline_css;
-pagespeed EnableFilters inline_import_to_link;
-pagespeed EnableFilters resize_mobile_images;
-pagespeed EnableFilters responsive_images;
-pagespeed EnableFilters rewrite_css;
-pagespeed EnableFilters move_css_above_scripts;
-pagespeed EnableFilters inline_import_to_link;
+pagespeed RewriteLevel CoreFilters;
 ```
 
 Remember to run `sudo systemctl reload nginx` after any changes.
