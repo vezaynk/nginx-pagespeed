@@ -90,7 +90,7 @@ jobs:
 
           # The message for the commit.
           # Default: 'Commit from GitHub Actions (name of the workflow)'
-          message: 'Update dist'
+          message: 'Daily Build'
 
           # Arguments for the git pull command. Use NO-PULL to avoid the action pulling at all.
           # Default: '--no-rebase'
