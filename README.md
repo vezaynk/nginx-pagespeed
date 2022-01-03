@@ -4,7 +4,7 @@ Configuring NGINX to build correctly is a pain. Not because of anything wrong wi
 
 Luckily, most distributions fork it, make a few changes and bundle it with everyone's favorite modules. Installing NGINX from your distribution's repositories will always give you a batteries-included configuration. This convenience presents a dilemma: either accept what your distribution gives you and lose the flexibility of customizing your installation or bite the bullet and try to figure everything out yourself.
 
-I could no longer accept the default installation once I decided to have [Google PageSpeed](https://developers.google.com/speed/pagespeed/module) on my servers. If you're on this repository, I don't think I need to explain the benefits.
+I could no longer accept the default installation once I decided to have [Google PageSpeed](https://developers.google.com/speed/pagespeed/module) on my servers. If you're on this repository, I don't think I need to explain the benefits. In short, Mod PageSpeed is a collection of filters that apply optimizations to content going through it such as compression, minification, conversion to modern formats, lazy-loading, and more.
 
 There was painfully little documentation on the topic of forking a Debian package, but I managed to piece it together. This repository is the result: a seamless way to substitute Debian-flavored NGINX with Debian-flavored NGINX + PageSpeed. Enjoy!
 
