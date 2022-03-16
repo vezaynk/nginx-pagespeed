@@ -1,16 +1,16 @@
 Package: libnginx-mod-http-auth-pam
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 63
-Depends: nginx-common (= 1.18.0-7), libc6 (>= 2.14), libpam0g (>= 0.99.7.1)
+Depends: nginx-common (= 1.18.0-8), libc6 (>= 2.14), libpam0g (>= 0.99.7.1)
 Recommends: nginx
-Filename: ./libnginx-mod-http-auth-pam_1.18.0-7_amd64.deb
-Size: 31800
-MD5sum: c801bcb8a60eea327191b311ec08e1e2
-SHA1: 827ae41d97a57e02af1704e25b15879948a7e864
-SHA256: 6bd9e179610859bbbfdc5480c7b9cb91a6b8381c703e66dcfcb7bcf06a8293aa
+Filename: ./libnginx-mod-http-auth-pam_1.18.0-8_amd64.deb
+Size: 31944
+MD5sum: e1c212c29df9a3970eb3f48b6f6ebc65
+SHA1: 05afe44dcf59158d481372eeb83bd6e8bb2ce7a6
+SHA256: 6d9811254717d7f386456872dba3dd214748f3becd800ab9dce5f22ff5c2e31e
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -22,17 +22,17 @@ Description: PAM authentication module for Nginx
 
 Package: libnginx-mod-http-cache-purge
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 71
-Depends: nginx-common (= 1.18.0-7), libc6 (>= 2.14)
+Depends: nginx-common (= 1.18.0-8), libc6 (>= 2.14)
 Recommends: nginx
-Filename: ./libnginx-mod-http-cache-purge_1.18.0-7_amd64.deb
-Size: 34120
-MD5sum: cde066998dfd96ab2fd557566a20660a
-SHA1: aa1e9023ba7dbff9a14e57cac6239bb9980209a9
-SHA256: a06a4ff2f9bb2bfb9f6e50c2b8e91bab03e461d21f65892a1d0930eda6b862e3
+Filename: ./libnginx-mod-http-cache-purge_1.18.0-8_amd64.deb
+Size: 34248
+MD5sum: f478729afcadc455645dafa8b8f34f14
+SHA1: 63ae0e27b898e34b979b98d821de93c3d988bd20
+SHA256: 47d3e7784dd633ec929fb016c1c59924aa32de2bdeb225fdbd8b4c2787c85602
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -43,17 +43,17 @@ Description: Purge content from Nginx caches
 
 Package: libnginx-mod-http-dav-ext
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 80
-Depends: nginx-common (= 1.18.0-7), libc6 (>= 2.14), libxml2 (>= 2.7.4)
+Depends: nginx-common (= 1.18.0-8), libc6 (>= 2.14), libxml2 (>= 2.7.4)
 Recommends: nginx
-Filename: ./libnginx-mod-http-dav-ext_1.18.0-7_amd64.deb
-Size: 38428
-MD5sum: 7343e40f4d6adf1cca1a0a752477eef8
-SHA1: bdabddb7766198a382ae81fa48c36603b346c38c
-SHA256: c9e6fabff6538090f6277197f85eb63b4479b11ad949303a36033ee929ff3ecf
+Filename: ./libnginx-mod-http-dav-ext_1.18.0-8_amd64.deb
+Size: 38568
+MD5sum: 24584fab266e0e8f3f1232662f47ebe8
+SHA1: 75d118bce214fd933482fa58d173fe988877d7d6
+SHA256: 853f7e9d572b8fbd9efea6bd9ccc8423b91c7c2468d21cd30122c2882b1e40f5
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -65,17 +65,17 @@ Description: WebDAV missing commands support for Nginx
 
 Package: libnginx-mod-http-echo
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 93
-Depends: nginx-common (= 1.18.0-7), libc6 (>= 2.14)
+Depends: nginx-common (= 1.18.0-8), libc6 (>= 2.14)
 Recommends: nginx
-Filename: ./libnginx-mod-http-echo_1.18.0-7_amd64.deb
-Size: 42708
-MD5sum: fe4020c318180f37087a488095a8a362
-SHA1: 975929d88f001bfd62c52e938d9b9b7b35d082ac
-SHA256: fd77b496fa6188696b23fbe0a3e9dc4276ca27ba7b82c598c1afa4a6141f6f59
+Filename: ./libnginx-mod-http-echo_1.18.0-8_amd64.deb
+Size: 42852
+MD5sum: ee83b198aa31dd7fa2d27ae87c0af92e
+SHA1: 5ab4cf24d53934c8b8e614c1fac83462d72d0503
+SHA256: 665e32de3446cdd66239e5c92f9eaa71b0b6078e32381a0dd8dbf4c80743206a
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -99,17 +99,17 @@ Description: Bring echo and more shell style goodies to Nginx
 
 Package: libnginx-mod-http-fancyindex
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 80
-Depends: nginx-common (= 1.18.0-7), libc6 (>= 2.14)
+Depends: nginx-common (= 1.18.0-8), libc6 (>= 2.14)
 Suggests: nginx
-Filename: ./libnginx-mod-http-fancyindex_1.18.0-7_amd64.deb
-Size: 37188
-MD5sum: a465140d8234381b3c3a5961522c0fac
-SHA1: 52c3d1b1f02f32de0c941d060c99c0b025859a8d
-SHA256: be0947368a48c5eced1475657fcc951b89ccbcbd744bdae5091d4401c2107b9c
+Filename: ./libnginx-mod-http-fancyindex_1.18.0-8_amd64.deb
+Size: 37328
+MD5sum: c0f42e05dc45d1876c7acca8b784a599
+SHA1: 06cc770ded5ef9859fa3fd82d76f8c332105295e
+SHA256: 311b607d54255cf21507c612620395ae1802605fce9464b22a92f1d15c6ce312
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -120,17 +120,17 @@ Description: Fancy indexes module for the Nginx
 
 Package: libnginx-mod-http-geoip
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 72
-Depends: nginx-common (= 1.18.0-7), libc6 (>= 2.14), libgeoip1 (>= 1.6.12)
+Depends: nginx-common (= 1.18.0-8), libc6 (>= 2.14), libgeoip1 (>= 1.6.12)
 Recommends: nginx
-Filename: ./libnginx-mod-http-geoip_1.18.0-7_amd64.deb
-Size: 32984
-MD5sum: cd4c39ba6250eb3f81076cd5ea352b68
-SHA1: d48894074ee8d75cca98041baf8f1b4e7fed6842
-SHA256: 91b195e275fdb03ae36c61835c2941ca02582dd77beee7009d735773eb899a6d
+Filename: ./libnginx-mod-http-geoip_1.18.0-8_amd64.deb
+Size: 33140
+MD5sum: 9ede8b8672904877afdfc8a7424f6745
+SHA1: a1c15ff10bbe98ccafc3049b4d16d183299d2bfb
+SHA256: f8046eb5064d78f90052fb01f4f2e9d109839a89c25dc3a1b409ab5c32d481fc
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -143,17 +143,17 @@ Description: GeoIP HTTP module for Nginx
 
 Package: libnginx-mod-http-geoip2
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 67
-Depends: nginx-common (= 1.18.0-7), libc6 (>= 2.14), libmaxminddb0 (>= 1.0.2)
+Depends: nginx-common (= 1.18.0-8), libc6 (>= 2.14), libmaxminddb0 (>= 1.0.2)
 Recommends: nginx
-Filename: ./libnginx-mod-http-geoip2_1.18.0-7_amd64.deb
-Size: 33424
-MD5sum: 1050056ee26f8494c6b43520087fd073
-SHA1: 3cc73de275302c47cc506492486d3063f78f1fc4
-SHA256: 9758bb037c2c44e37e391c811ba96f49d055df737d22c221242a36e9210e6a7e
+Filename: ./libnginx-mod-http-geoip2_1.18.0-8_amd64.deb
+Size: 33552
+MD5sum: 832df1f49314053bcc6b832a58284f94
+SHA1: e983d634a95fdadc463c966a1a61e95a05af9c87
+SHA256: 01c31d9c83a6c6df9d57f78f6f06e0479e155362ae751a169519a1a525451a2e
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -166,17 +166,17 @@ Description: GeoIP2 HTTP module for Nginx
 
 Package: libnginx-mod-http-headers-more-filter
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 80
-Depends: nginx-common (= 1.18.0-7), libc6 (>= 2.14)
+Depends: nginx-common (= 1.18.0-8), libc6 (>= 2.14)
 Recommends: nginx
-Filename: ./libnginx-mod-http-headers-more-filter_1.18.0-7_amd64.deb
-Size: 37084
-MD5sum: 3a1b83c2665c130ffae8c61ddc0ba262
-SHA1: 039f989443c17e5369553eb57f98b7d596c476df
-SHA256: b63cb7238f4210fb7b4a3f1a551885115109a2081bc4d756e2eddd4d3dc4e24b
+Filename: ./libnginx-mod-http-headers-more-filter_1.18.0-8_amd64.deb
+Size: 37224
+MD5sum: 4a2e1ec5ab1deb9ee13796704dc9cca8
+SHA1: 934ec1b19eb29f031d780298e1e2128e2093ef0b
+SHA256: bded7d01d211afb0b2c654e353ac674ef4425015aa4e25c9d6bf597ad212dfaf
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -190,17 +190,17 @@ Description: Set and clear input and output headers for Nginx
 
 Package: libnginx-mod-http-image-filter
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 76
-Depends: nginx-common (= 1.18.0-7), libc6 (>= 2.14), libgd3 (>= 2.1.0~alpha~)
+Depends: nginx-common (= 1.18.0-8), libc6 (>= 2.14), libgd3 (>= 2.1.0~alpha~)
 Recommends: nginx
-Filename: ./libnginx-mod-http-image-filter_1.18.0-7_amd64.deb
-Size: 35976
-MD5sum: 9df9104a3f16b47b2dd6c6ef1121e287
-SHA1: 8bda6b0491e77db52b6cc09cb63a1f7533765feb
-SHA256: d2386157ca2294bd706cfa75dc20740c4cd9e32c44a8118524fa31cf688e0c9a
+Filename: ./libnginx-mod-http-image-filter_1.18.0-8_amd64.deb
+Size: 36108
+MD5sum: deffe2a9aeed1b386694645ec0bbcc65
+SHA1: 1fbce3e20b39de2e049cba49ab4c7b409db5761d
+SHA256: fd53b90bdfa94050ca5a29cff000da9ded3fa607f07080e63f2430dfdcfffaf7
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -213,17 +213,17 @@ Description: HTTP image filter module for Nginx
 
 Package: libnginx-mod-http-lua
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 453
-Depends: libnginx-mod-http-ndk (= 1.18.0-7), nginx-common (= 1.18.0-7), libc6 (>= 2.14), libluajit-5.1-2 (>= 2.0.4+dfsg)
+Depends: libnginx-mod-http-ndk (= 1.18.0-8), nginx-common (= 1.18.0-8), libc6 (>= 2.14), libluajit-5.1-2 (>= 2.0.4+dfsg)
 Recommends: nginx
-Filename: ./libnginx-mod-http-lua_1.18.0-7_amd64.deb
-Size: 169520
-MD5sum: 365c4f4f44a2e5844f14ca7704a8a216
-SHA1: fccd1a6f7793a63dad9a75a6d69d2ff0b21014fc
-SHA256: a1c1ff636ecb005e7080414fd52b1ba67d2537633ab3d4ff7f3b6eee908ddab3
+Filename: ./libnginx-mod-http-lua_1.18.0-8_amd64.deb
+Size: 169560
+MD5sum: 713ab30d0c809d62506aaa58d6b21ecf
+SHA1: 853679633cbe1c8a97022621e4be1bcb5687dd3a
+SHA256: 28d216b102aa5cd74e98080010ff79583ea740c96955f8720d74d7420aa0368d
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -237,17 +237,17 @@ Description: Lua module for Nginx
 
 Package: libnginx-mod-http-ndk
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 63
-Depends: nginx-common (= 1.18.0-7), libc6 (>= 2.4)
+Depends: nginx-common (= 1.18.0-8), libc6 (>= 2.4)
 Recommends: nginx
-Filename: ./libnginx-mod-http-ndk_1.18.0-7_amd64.deb
-Size: 31988
-MD5sum: d007b07eb75fe54d83a849e5095c6ae7
-SHA1: 6daf1bc562f33d28f6a15ca45ab28cd0268ac1d6
-SHA256: 5735c20152449ff75e3e9719f7594d33bc584606ce528e075465ed8fdfa9b24d
+Filename: ./libnginx-mod-http-ndk_1.18.0-8_amd64.deb
+Size: 32132
+MD5sum: 5bd64c7cc53cc8f4093980687acdc006
+SHA1: 8c709067b002ba63f820d653c9fbf3db5a292f50
+SHA256: 036e790fadd84a9be8958a87da4a033f77e3c4dc32591c4d7403b219109d8d9d
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -263,18 +263,18 @@ Description: Nginx Development Kit module
 
 Package: libnginx-mod-http-perl
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 120
-Depends: nginx-common (= 1.18.0-7), perl, perlapi-5.30.0, libc6 (>= 2.14), libperl5.30 (>= 5.30.0)
+Depends: nginx-common (= 1.18.0-8), perl, perlapi-5.30.0, libc6 (>= 2.14), libperl5.30 (>= 5.30.0)
 Recommends: nginx
 Replaces: nginx-extras (<< 1.9.14-1)
-Filename: ./libnginx-mod-http-perl_1.18.0-7_amd64.deb
-Size: 44488
-MD5sum: 81f61b11572ec07157f86d6bb32e29b6
-SHA1: 7af74d5f43e2dfd838b6045670a5fbe98785c985
-SHA256: 2a8901940b36941004392ae3fd179cab552c001e58c1a69a4bf039aa8fa60e34
+Filename: ./libnginx-mod-http-perl_1.18.0-8_amd64.deb
+Size: 44552
+MD5sum: 43088e9d411c1003f9208d57c3efef52
+SHA1: 54f55f26c3ac0f826194def6ef79e8eb8a75a881
+SHA256: 62f9efe05f70a23379355b2eb3cd5bcf7874d97a3985867cf56b9bba376b9065
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -288,17 +288,17 @@ Description: Perl module for Nginx
 
 Package: libnginx-mod-http-subs-filter
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 67
-Depends: nginx-common (= 1.18.0-7), libc6 (>= 2.14)
+Depends: nginx-common (= 1.18.0-8), libc6 (>= 2.14)
 Recommends: nginx
-Filename: ./libnginx-mod-http-subs-filter_1.18.0-7_amd64.deb
-Size: 33964
-MD5sum: 11baa60d93023a67eff38cc3ceffd7d5
-SHA1: a4c90b49a198a446a804bf0ad4b84b31eccd0f0e
-SHA256: 5f932918f66c98e08371fbe1b51e45c7bbb5511df454b7299e04c47b1fb8e176
+Filename: ./libnginx-mod-http-subs-filter_1.18.0-8_amd64.deb
+Size: 34100
+MD5sum: 96757bd0276e791d663afb033fabb106
+SHA1: fa3c9ab9ca3969061b010a3c410ade3830988b9c
+SHA256: 562ed2095ec0451d1065935c5c149d2a8ba8af9f3a218c53cd9e635101fbc33c
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -310,17 +310,17 @@ Description: Substitution filter module for Nginx
 
 Package: libnginx-mod-http-uploadprogress
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 80
-Depends: nginx-common (= 1.18.0-7), libc6 (>= 2.14)
+Depends: nginx-common (= 1.18.0-8), libc6 (>= 2.14)
 Recommends: nginx
-Filename: ./libnginx-mod-http-uploadprogress_1.18.0-7_amd64.deb
-Size: 36300
-MD5sum: 58eea957a95bf689eedc96de6aaca3d8
-SHA1: 6f4fbf059c8b48c5dca302937749ccd0691d17f8
-SHA256: ca1df6628898b819d998a87fb5d80d77b93e38dd381a69874dac52b1da2bc792
+Filename: ./libnginx-mod-http-uploadprogress_1.18.0-8_amd64.deb
+Size: 36424
+MD5sum: ea9d175a33eead5180164e2cd5b1f7b7
+SHA1: 416bcb135349138431035e797f4a49498339af11
+SHA256: caa71a67b7390047362ffdf00c58c063e1876a0aafb66940942c8b7d5301aaa0
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -334,17 +334,17 @@ Description: Upload progress system for Nginx
 
 Package: libnginx-mod-http-upstream-fair
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 67
-Depends: nginx-common (= 1.18.0-7), libc6 (>= 2.4)
+Depends: nginx-common (= 1.18.0-8), libc6 (>= 2.4)
 Recommends: nginx
-Filename: ./libnginx-mod-http-upstream-fair_1.18.0-7_amd64.deb
-Size: 34032
-MD5sum: 0e04e192f3156e781729c5b2482ddfaf
-SHA1: c3216f448c8000a9bec5f46d396b5a6e18e71278
-SHA256: 25801942e5ff63009647e71d7de4845bf65490a6ffa118dc8f47b799014633b4
+Filename: ./libnginx-mod-http-upstream-fair_1.18.0-8_amd64.deb
+Size: 34160
+MD5sum: 35e876e6dbfccda36b983859c1fdab6a
+SHA1: a5f7e55b61c07cb82f33b4057516c3a2e775d7ba
+SHA256: cc573127904628d84971ccd2d7439b1ebe22467146d55029346edc9705f85780
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -355,17 +355,17 @@ Description: Nginx Upstream Fair Proxy Load Balancer
 
 Package: libnginx-mod-http-xslt-filter
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 71
-Depends: nginx-common (= 1.18.0-7), libc6 (>= 2.14), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25)
+Depends: nginx-common (= 1.18.0-8), libc6 (>= 2.14), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25)
 Recommends: nginx
-Filename: ./libnginx-mod-http-xslt-filter_1.18.0-7_amd64.deb
-Size: 34368
-MD5sum: 2f06b0c0d1a258b10d489dd4fd451b3d
-SHA1: f7df9dae53decf0380d18638e5a7395d535d7de2
-SHA256: e6f55fb9b0a7d5ae3d9f54641716c021682a608e9c70572cc7d1849a6de24be7
+Filename: ./libnginx-mod-http-xslt-filter_1.18.0-8_amd64.deb
+Size: 34492
+MD5sum: 2eb0b42acc7de4acb1e631358315870e
+SHA1: b9bb94dec70acf7ecfd28e6d90679437c867a6cd
+SHA256: 11c02f6519f9a01575be14d324e79e2b2a09432d42dd1587ff1f9d76202e8de7
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -378,17 +378,17 @@ Description: XSLT Transformation module for Nginx
 
 Package: libnginx-mod-mail
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 150
-Depends: nginx-common (= 1.18.0-7), libc6 (>= 2.14)
+Depends: nginx-common (= 1.18.0-8), libc6 (>= 2.14)
 Recommends: nginx
-Filename: ./libnginx-mod-mail_1.18.0-7_amd64.deb
-Size: 61556
-MD5sum: a261e0fc9f0eaa6b308713731bed5d3a
-SHA1: a7c19676d1f0dffb676bd2d27dbc5249215d2abc
-SHA256: 4a2a126ae6072fd70738d7d7515b181ac08d2f70544773d38c6b577be78209cc
+Filename: ./libnginx-mod-mail_1.18.0-8_amd64.deb
+Size: 61708
+MD5sum: a6d5eac3016675bc2fff00abc5874cd4
+SHA1: 56cefdb1d17487d319ca1865f8729398ce0bd866
+SHA256: 544bdeb5d2c8dd2e5d19ee13bca771b6268eeb12b64ab93a50d7dadfa961a326
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -400,17 +400,17 @@ Description: Mail module for Nginx
 
 Package: libnginx-mod-nchan
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 701
-Depends: nginx-common (= 1.18.0-7), libc6 (>= 2.29)
+Depends: nginx-common (= 1.18.0-8), libc6 (>= 2.29)
 Recommends: nginx
-Filename: ./libnginx-mod-nchan_1.18.0-7_amd64.deb
-Size: 248800
-MD5sum: d9f5512d22fd75a91945c590c53ad59f
-SHA1: 5a81ec7ed133ace993549b8f63269fd94800d026
-SHA256: fd89b29e47e93a89d775bbb6c49f8499ba74db83a699bbb2e799542f78da287f
+Filename: ./libnginx-mod-nchan_1.18.0-8_amd64.deb
+Size: 248564
+MD5sum: a3605ccd421dbcbfb874f797f20a2b3d
+SHA1: 643455aceb757799b8a0e99bb826e2dae4d54aee
+SHA256: 01e2d56db416262f31fa14f9eeb9330087050701bd41a1bbad8e19c0b4e2b439
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -426,17 +426,17 @@ Description: Fast, flexible pub/sub server for Nginx
 
 Package: libnginx-mod-rtmp
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 343
-Depends: nginx-common (= 1.18.0-7), libc6 (>= 2.28)
+Depends: nginx-common (= 1.18.0-8), libc6 (>= 2.28)
 Recommends: nginx
-Filename: ./libnginx-mod-rtmp_1.18.0-7_amd64.deb
-Size: 131084
-MD5sum: 3c12a6b939a1b7352af80e9b0d9cc8a0
-SHA1: 70774353ad0c9f4fbbd9b13d453e21157a95e6c2
-SHA256: 7df4a48e96a0e1e5e939db35c4dd346e7989ec1f2c81efb1ea9644d12bcd0343
+Filename: ./libnginx-mod-rtmp_1.18.0-8_amd64.deb
+Size: 131360
+MD5sum: 137f0207ccfa705c0d6c7df993c92ac5
+SHA1: 5ad141f3d18e73a017310e9f396764d4908f3728
+SHA256: 5bacc08df0d3f2dd2cd0028f1877b64a0e096f4dd63fdab94962d39b9728413a
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -453,17 +453,17 @@ Description: RTMP support for Nginx
 
 Package: libnginx-mod-stream
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 217
-Depends: nginx-common (= 1.18.0-7), libc6 (>= 2.14)
+Depends: nginx-common (= 1.18.0-8), libc6 (>= 2.14)
 Recommends: nginx
-Filename: ./libnginx-mod-stream_1.18.0-7_amd64.deb
-Size: 84728
-MD5sum: ccde947c6437623c8a4b597cfa101413
-SHA1: deb7bcd49b126d903e9f9515697bedd049a6994b
-SHA256: f9efc30ace6742a809d214ecba22c7d7973e51ae7c08489eab7124085aa158cf
+Filename: ./libnginx-mod-stream_1.18.0-8_amd64.deb
+Size: 84972
+MD5sum: 64bdfb2f87f55fe273f20d66debfb9a7
+SHA1: acfe0e3021e22ab65e8b437cfae6dea97bbfc834
+SHA256: 0ced4bef6a00d1f15402e58ab93d53709933604d55c764c26a9ce2bdb25c1367
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -476,17 +476,17 @@ Description: Stream module for Nginx
 
 Package: libnginx-mod-stream-geoip
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 68
-Depends: nginx-common (= 1.18.0-7), libc6 (>= 2.14), libgeoip1 (>= 1.6.12), libnginx-mod-stream (= 1.18.0-7)
+Depends: nginx-common (= 1.18.0-8), libc6 (>= 2.14), libgeoip1 (>= 1.6.12), libnginx-mod-stream (= 1.18.0-8)
 Recommends: nginx
-Filename: ./libnginx-mod-stream-geoip_1.18.0-7_amd64.deb
-Size: 32204
-MD5sum: 8eb773dac54896bf3d2bb053fd145a01
-SHA1: 6fddbf3022283690b4d1f3fd6dde471e0d8a4ebf
-SHA256: 6b6bfc903ea26cef6c9a2ea2a9fd2c4a039fbc942d24eb01ae964944ef40428b
+Filename: ./libnginx-mod-stream-geoip_1.18.0-8_amd64.deb
+Size: 32344
+MD5sum: 1fdb4072817e3c14b89fa33fdd780ac7
+SHA1: 9c8c09d742774395b24de891f7d73d8ccd41aaa5
+SHA256: 64cd633f7032cfdc81bf359dbec3797f35b2e8ca5c63ae160f305677f4061d97
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -499,17 +499,17 @@ Description: GeoIP Stream module for Nginx
 
 Package: libnginx-mod-stream-geoip2
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 67
-Depends: nginx-common (= 1.18.0-7), libc6 (>= 2.14), libmaxminddb0 (>= 1.0.2), libnginx-mod-stream (= 1.18.0-7)
+Depends: nginx-common (= 1.18.0-8), libc6 (>= 2.14), libmaxminddb0 (>= 1.0.2), libnginx-mod-stream (= 1.18.0-8)
 Recommends: nginx
-Filename: ./libnginx-mod-stream-geoip2_1.18.0-7_amd64.deb
-Size: 33004
-MD5sum: 799c0eee22709628f6bdafadfe2b7f78
-SHA1: c24ea5f64373b2a24e8126a3f7f96043a424c4bd
-SHA256: ee3740a265e5d71a2b576633a4a9f70a7f131b625a45a772decbf8925344a758
+Filename: ./libnginx-mod-stream-geoip2_1.18.0-8_amd64.deb
+Size: 33140
+MD5sum: 02fbc2b29fcaa1517a926a87bc7f2ddd
+SHA1: 557fc5f378175c5c3dfd4702fb1cefbb4f0dd6d0
+SHA256: f87685cc8fd8abc12e3ab5d72815e23ef6dedb60d40dd955752f15cf52e22904
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -521,16 +521,16 @@ Description: GeoIP2 Stream module for Nginx
  code, etc.
 
 Package: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: all
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 39
-Depends: nginx-core (<< 1.18.0-7.1~) | nginx-full (<< 1.18.0-7.1~) | nginx-light (<< 1.18.0-7.1~) | nginx-extras (<< 1.18.0-7.1~), nginx-core (>= 1.18.0-7) | nginx-full (>= 1.18.0-7) | nginx-light (>= 1.18.0-7) | nginx-extras (>= 1.18.0-7)
-Filename: ./nginx_1.18.0-7_all.deb
-Size: 27340
-MD5sum: a650b78b48b58b5e73cc20cacf557fc9
-SHA1: 23a2934bfb4f8a0131a89c86af4d2d1449772dd9
-SHA256: 2598995da20351d1d92137a3313265c935083fdd0e643219f01aea8ee178fc2f
+Depends: nginx-core (<< 1.18.0-8.1~) | nginx-full (<< 1.18.0-8.1~) | nginx-light (<< 1.18.0-8.1~) | nginx-extras (<< 1.18.0-8.1~), nginx-core (>= 1.18.0-8) | nginx-full (>= 1.18.0-8) | nginx-light (>= 1.18.0-8) | nginx-extras (>= 1.18.0-8)
+Filename: ./nginx_1.18.0-8_all.deb
+Size: 27472
+MD5sum: 531cdcb0b6736344e2d291103bed958b
+SHA1: 7473ae3b26f6587d80b77034730634407ae857a2
+SHA256: e64d0bc522afd2b53bf0b9946c1de333b2953873a625612782490baf669fe5ae
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -544,17 +544,17 @@ Description: small, powerful, scalable web/proxy server
 
 Package: nginx-common
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: all
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 270
 Depends: lsb-base (>= 3.0-6), debconf (>= 0.5) | debconf-2.0
 Suggests: fcgiwrap, nginx-doc, ssl-cert
-Filename: ./nginx-common_1.18.0-7_all.deb
-Size: 59968
-MD5sum: bc8164f7cef2846230995b12682c9b05
-SHA1: c9d63202d8ca53649be65ca23a1c38db27eea182
-SHA256: 84de7fa560adf2be1e87eab4cf7d8d989c4c4dee0ebd8ade47b418b84a864ba4
+Filename: ./nginx-common_1.18.0-8_all.deb
+Size: 60112
+MD5sum: 4f6b1a780395a85d3c0940c1f2022529
+SHA1: 0928b1619ed6cbb5f1756b06fb31e04dada3a9c5
+SHA256: ef55851a55fd7f06c44dbd2fee63789b309092df28cc6b358b95f70f94428349
 Section: httpd
 Priority: optional
 Multi-Arch: foreign
@@ -569,21 +569,21 @@ Description: small, powerful, scalable web/proxy server - common files
 
 Package: nginx-core
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 12939
-Depends: libnginx-mod-http-geoip (= 1.18.0-7), libnginx-mod-http-image-filter (= 1.18.0-7), libnginx-mod-http-xslt-filter (= 1.18.0-7), libnginx-mod-mail (= 1.18.0-7), libnginx-mod-stream (= 1.18.0-7), libnginx-mod-stream-geoip (= 1.18.0-7), nginx-common (= 1.18.0-7), iproute2, libc6 (>= 2.29), libcrypt1 (>= 1:4.1.0), libgcc-s1 (>= 3.0), libpcre3, libssl1.1 (>= 1.1.1), libstdc++6 (>= 4.8), zlib1g (>= 1:1.1.4)
-Suggests: nginx-doc (= 1.18.0-7)
+Depends: libnginx-mod-http-geoip (= 1.18.0-8), libnginx-mod-http-image-filter (= 1.18.0-8), libnginx-mod-http-xslt-filter (= 1.18.0-8), libnginx-mod-mail (= 1.18.0-8), libnginx-mod-stream (= 1.18.0-8), libnginx-mod-stream-geoip (= 1.18.0-8), nginx-common (= 1.18.0-8), iproute2, libc6 (>= 2.29), libcrypt1 (>= 1:4.1.0), libgcc-s1 (>= 3.0), libpcre3, libssl1.1 (>= 1.1.1), libstdc++6 (>= 4.8), zlib1g (>= 1:1.1.4)
+Suggests: nginx-doc (= 1.18.0-8)
 Conflicts: nginx-extras, nginx-light
 Breaks: nginx (<< 1.4.5-1), nginx-full (<< 1.18.0-1)
 Replaces: nginx-full (<< 1.18.0-1)
 Provides: httpd, httpd-cgi, nginx
-Filename: ./nginx-core_1.18.0-7_amd64.deb
-Size: 3888708
-MD5sum: 0269e8c42058303048c741c8511f4736
-SHA1: 83923865f8da8dc6179500e90b429ccd704be981
-SHA256: 009bb009028f6de25fa0d1384183ceb7521fe8d831fbce4810126a402ef6bba8
+Filename: ./nginx-core_1.18.0-8_amd64.deb
+Size: 3888460
+MD5sum: b4a903e43687b906660ddeb7aeeb42a9
+SHA1: cae5f87be7a6f9c2d07d39394c237a4d4d482d84
+SHA256: 0ac75e02066760a62d00bcd5e42d653ce43eba74f944a2ce390e09451773b006
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -611,15 +611,15 @@ Description: nginx web/proxy server (standard version)
 
 Package: nginx-doc
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: all
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 74
-Filename: ./nginx-doc_1.18.0-7_all.deb
-Size: 36212
-MD5sum: 6246f4fa0e401e1bed8605c853f0203a
-SHA1: d7ea357d587b006bd56ea95e19578257531915e8
-SHA256: b9b8ef35d32981cd681eb643417db675da38f7ca48288175fb25d207fa3c18bf
+Filename: ./nginx-doc_1.18.0-8_all.deb
+Size: 36344
+MD5sum: 649e2db1efda14319403926640f3e8b0
+SHA1: 8c8afc90c4dd3cdac29a0b1410737752702aa1ff
+SHA256: ae2076925dcea2928945dbd47dc62ac031e66edcac349a3ef674f0065d8f05ca
 Section: doc
 Priority: optional
 Multi-Arch: foreign
@@ -633,20 +633,20 @@ Description: small, powerful, scalable web/proxy server - documentation
 
 Package: nginx-extras
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 12974
-Depends: libnginx-mod-http-auth-pam (= 1.18.0-7), libnginx-mod-http-cache-purge (= 1.18.0-7), libnginx-mod-http-dav-ext (= 1.18.0-7), libnginx-mod-http-echo (= 1.18.0-7), libnginx-mod-http-fancyindex (= 1.18.0-7), libnginx-mod-http-geoip (= 1.18.0-7), libnginx-mod-http-geoip2 (= 1.18.0-7), libnginx-mod-http-headers-more-filter (= 1.18.0-7), libnginx-mod-http-image-filter (= 1.18.0-7), libnginx-mod-http-lua (= 1.18.0-7), libnginx-mod-http-perl (= 1.18.0-7), libnginx-mod-http-subs-filter (= 1.18.0-7), libnginx-mod-http-uploadprogress (= 1.18.0-7), libnginx-mod-http-upstream-fair (= 1.18.0-7), libnginx-mod-http-xslt-filter (= 1.18.0-7), libnginx-mod-mail (= 1.18.0-7), libnginx-mod-nchan (= 1.18.0-7), libnginx-mod-stream (= 1.18.0-7), libnginx-mod-stream-geoip (= 1.18.0-7), libnginx-mod-stream-geoip2 (= 1.18.0-7), nginx-common (= 1.18.0-7), iproute2, libc6 (>= 2.29), libcrypt1 (>= 1:4.1.0), libgcc-s1 (>= 3.0), libpcre3, libssl1.1 (>= 1.1.1), libstdc++6 (>= 4.8), zlib1g (>= 1:1.1.4)
-Suggests: nginx-doc (= 1.18.0-7)
+Depends: libnginx-mod-http-auth-pam (= 1.18.0-8), libnginx-mod-http-cache-purge (= 1.18.0-8), libnginx-mod-http-dav-ext (= 1.18.0-8), libnginx-mod-http-echo (= 1.18.0-8), libnginx-mod-http-fancyindex (= 1.18.0-8), libnginx-mod-http-geoip (= 1.18.0-8), libnginx-mod-http-geoip2 (= 1.18.0-8), libnginx-mod-http-headers-more-filter (= 1.18.0-8), libnginx-mod-http-image-filter (= 1.18.0-8), libnginx-mod-http-lua (= 1.18.0-8), libnginx-mod-http-perl (= 1.18.0-8), libnginx-mod-http-subs-filter (= 1.18.0-8), libnginx-mod-http-uploadprogress (= 1.18.0-8), libnginx-mod-http-upstream-fair (= 1.18.0-8), libnginx-mod-http-xslt-filter (= 1.18.0-8), libnginx-mod-mail (= 1.18.0-8), libnginx-mod-nchan (= 1.18.0-8), libnginx-mod-stream (= 1.18.0-8), libnginx-mod-stream-geoip (= 1.18.0-8), libnginx-mod-stream-geoip2 (= 1.18.0-8), nginx-common (= 1.18.0-8), iproute2, libc6 (>= 2.29), libcrypt1 (>= 1:4.1.0), libgcc-s1 (>= 3.0), libpcre3, libssl1.1 (>= 1.1.1), libstdc++6 (>= 4.8), zlib1g (>= 1:1.1.4)
+Suggests: nginx-doc (= 1.18.0-8)
 Conflicts: nginx-core, nginx-light
 Breaks: nginx (<< 1.4.5-1)
 Provides: httpd, httpd-cgi, nginx
-Filename: ./nginx-extras_1.18.0-7_amd64.deb
-Size: 3899636
-MD5sum: ca6678f79bbe17a92c4c840d9f7b0227
-SHA1: 057c9ef3b2c415b5f42338442ee3c527e135d99d
-SHA256: aa6479bf7f9f3b5606a8f0ad5b1ff6a512846c9d5cb8f5e9d96912626766703e
+Filename: ./nginx-extras_1.18.0-8_amd64.deb
+Size: 3899496
+MD5sum: d0eb9d783776dc29a795dbc2774bb211
+SHA1: 6c7b9e4cf48e500fc7aa320fbcd0a95e279c7f09
+SHA256: 7f55384efdf423b3a44a44ce348dd94f9b3f544aa1e13410f2059ee273466044
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -678,19 +678,19 @@ Description: nginx web/proxy server (extended version)
 
 Package: nginx-full
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: all
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 39
-Depends: libnginx-mod-http-auth-pam, libnginx-mod-http-dav-ext, libnginx-mod-http-echo, libnginx-mod-http-geoip2, libnginx-mod-http-subs-filter, libnginx-mod-http-upstream-fair, libnginx-mod-stream-geoip2, nginx-core (>= 1.18.0-7), nginx-core (<< 1.18.0-7.1~)
-Suggests: nginx-doc (= 1.18.0-7)
+Depends: libnginx-mod-http-auth-pam, libnginx-mod-http-dav-ext, libnginx-mod-http-echo, libnginx-mod-http-geoip2, libnginx-mod-http-subs-filter, libnginx-mod-http-upstream-fair, libnginx-mod-stream-geoip2, nginx-core (>= 1.18.0-8), nginx-core (<< 1.18.0-8.1~)
+Suggests: nginx-doc (= 1.18.0-8)
 Breaks: nginx (<< 1.4.5-1)
 Provides: httpd, httpd-cgi, nginx
-Filename: ./nginx-full_1.18.0-7_all.deb
-Size: 27832
-MD5sum: 4e1611982fecb6e8aaa3350811041986
-SHA1: c373e05cc8730c2c49624e7845c3742db87f659c
-SHA256: b805a91fa1e48d4115dde5d8f6b56891977d98e6138d59ad97b2738e7eb377c7
+Filename: ./nginx-full_1.18.0-8_all.deb
+Size: 27972
+MD5sum: 4444700c3ea562d58b175ca4d8269efe
+SHA1: 0ef6c79d65b71f90b7f5949841f5cf7a8e0083c4
+SHA256: 41d6bbd3320d76e5764295c907fec64453f0b1bd1dec440477b56bfbbbea7647
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
@@ -721,20 +721,20 @@ Description: nginx web/proxy server (standard version with 3rd parties)
 
 Package: nginx-light
 Source: nginx
-Version: 1.18.0-7
+Version: 1.18.0-8
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 12879
-Depends: libnginx-mod-http-echo (= 1.18.0-7), nginx-common (= 1.18.0-7), iproute2, libc6 (>= 2.29), libcrypt1 (>= 1:4.1.0), libgcc-s1 (>= 3.0), libpcre3, libssl1.1 (>= 1.1.1), libstdc++6 (>= 4.8), zlib1g (>= 1:1.1.4)
-Suggests: nginx-doc (= 1.18.0-7)
+Depends: libnginx-mod-http-echo (= 1.18.0-8), nginx-common (= 1.18.0-8), iproute2, libc6 (>= 2.29), libcrypt1 (>= 1:4.1.0), libgcc-s1 (>= 3.0), libpcre3, libssl1.1 (>= 1.1.1), libstdc++6 (>= 4.8), zlib1g (>= 1:1.1.4)
+Suggests: nginx-doc (= 1.18.0-8)
 Conflicts: nginx-core, nginx-extras
 Breaks: nginx (<< 1.4.5-1)
 Provides: httpd, httpd-cgi, nginx
-Filename: ./nginx-light_1.18.0-7_amd64.deb
-Size: 3866720
-MD5sum: ebe1fb473dac4de471170f0bd786424f
-SHA1: c419f86f8eb0e700e5341ae6efed32ed1e969261
-SHA256: d689f0539da1e7bc3db52d1d2e0e1f7ada4521eeb197d23f3464175cc4de0a67
+Filename: ./nginx-light_1.18.0-8_amd64.deb
+Size: 3867396
+MD5sum: 2001adc97a60c4cdc32f53f4464708dd
+SHA1: 1147b265f57ab64aa6a214b91a826fe90221015f
+SHA256: 439f5a3be5d874ea8dcb9977aefab925264006b5908166631bd66ea8b0bf2d1c
 Section: httpd
 Priority: optional
 Homepage: https://nginx.net
