@@ -7,10 +7,10 @@ Installed-Size: 64
 Depends: nginx-common (= 1.18.0-9), libc6 (>= 2.14), libpam0g (>= 0.99.7.1)
 Recommends: nginx
 Filename: ./libnginx-mod-http-auth-pam_1.18.0-9_amd64.deb
-Size: 32308
-MD5sum: 30b029acb01b3b31c5f828a3afb7964a
-SHA1: 0c493171c5720ebed006fc4deeb8b92e50659aa6
-SHA256: 233f6ecc4f5e851cac37ae67b498e85ee2b936ef794135914a52b4e3995f41e0
+Size: 32300
+MD5sum: 64701b0d6251151fce3ab6d31846e1de
+SHA1: 553ba95c7536ad725fa937b5c3e5353142f8da84
+SHA256: 43c894724bbb13afa68abf1356692270976e6a08eaa2a7ed7ca6bc6b5fcc5242
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -29,10 +29,10 @@ Installed-Size: 72
 Depends: nginx-common (= 1.18.0-9), libc6 (>= 2.14)
 Recommends: nginx
 Filename: ./libnginx-mod-http-cache-purge_1.18.0-9_amd64.deb
-Size: 34616
-MD5sum: 2cdc0a43a22980fff007d8428476f5e4
-SHA1: fbcbb8470fc5997404fe3b24911a3966fd617698
-SHA256: 2c1d80eeef0e6721ed1d3746716d1c3f44ddd66ef7243b1571c337fdcd75b8c8
+Size: 34608
+MD5sum: 885560f98b2512368405a0b7c6180874
+SHA1: 34430cd05ca778bf4d4880aa3213f73a61e6096a
+SHA256: f05d65bd416a501d492bc031e98e6d9523c42f2ae9ee316441622c5c61cc027b
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -50,10 +50,10 @@ Installed-Size: 81
 Depends: nginx-common (= 1.18.0-9), libc6 (>= 2.14), libxml2 (>= 2.7.4)
 Recommends: nginx
 Filename: ./libnginx-mod-http-dav-ext_1.18.0-9_amd64.deb
-Size: 38936
-MD5sum: d427313d4b191cc27225740855bc8a62
-SHA1: 609bd8ec2a2102302a27f69712188ca81cfd6639
-SHA256: b27ffaf0afae318136b33dcef974c437667bf6fc1cce3baf702409d1efcd65f1
+Size: 38912
+MD5sum: 0f829723e46b3da9373bdb43c2e48045
+SHA1: b095e5a564b856bf2867b0c275f5d822681d0a06
+SHA256: 18a0b4742f2bb4aecd8c7f5ab5e6a9b7505c45c6b42308ae2815692f2c9c67e5
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -72,10 +72,10 @@ Installed-Size: 94
 Depends: nginx-common (= 1.18.0-9), libc6 (>= 2.14)
 Recommends: nginx
 Filename: ./libnginx-mod-http-echo_1.18.0-9_amd64.deb
-Size: 43192
-MD5sum: 9df758e64add18a49f855a5f7d3e86b2
-SHA1: cc340198bb71dcaa3eb3b06cedf4e962fe02e270
-SHA256: 13b0ae3b149f878fbf716b9eb8cc9316cf2704e0b3774e2ae8f4ee017ae304e3
+Size: 43180
+MD5sum: 2a7018bf828a70b1fa3577090825293d
+SHA1: 0b06ec2f9f77cae116982ca3e5f9d804ae55e616
+SHA256: 583813b50b05e78394a7abb3f003d617580a9572942d1a1b40408935e1610ff0
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -106,10 +106,10 @@ Installed-Size: 81
 Depends: nginx-common (= 1.18.0-9), libc6 (>= 2.14)
 Suggests: nginx
 Filename: ./libnginx-mod-http-fancyindex_1.18.0-9_amd64.deb
-Size: 37684
-MD5sum: c0e1b8bc6e102578685e0b07b31c0ee4
-SHA1: b5a2672ed49699e270487db8fd4942298493136b
-SHA256: 38b8f46cc6f63f0545f8e7f408e916f9f94313509b8870004dc33f91987a8d01
+Size: 37672
+MD5sum: 43692f0e81d44fba4cc42dec49713bea
+SHA1: 0f66080753fa1a8ebe7b3b60f266134bee9d42b2
+SHA256: e1acf48377224e94be48d3db9d5258bff89fc0c04400c0d0e02f9faf33a91c3a
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -127,10 +127,10 @@ Installed-Size: 73
 Depends: nginx-common (= 1.18.0-9), libc6 (>= 2.14), libgeoip1 (>= 1.6.12)
 Recommends: nginx
 Filename: ./libnginx-mod-http-geoip_1.18.0-9_amd64.deb
-Size: 33496
-MD5sum: 9051b6edec96d54d7a66fc838a455cfa
-SHA1: 8c9a0c0879ef64b650aacb8f7c04a786086d0094
-SHA256: f91caf0dcf022ad4e88af6e78201a72c0f91a19fbe701c03fd2e9961c0376315
+Size: 33492
+MD5sum: 8b2090047b47eb6fb83be4e47bae485f
+SHA1: e19373403b4e757493f2e4c6c0123e5ae04792c2
+SHA256: 00e5244761dcf97512b23659f276e3b73af6acc8a392312bcba5958be998fa09
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -150,10 +150,10 @@ Installed-Size: 68
 Depends: nginx-common (= 1.18.0-9), libc6 (>= 2.14), libmaxminddb0 (>= 1.0.2)
 Recommends: nginx
 Filename: ./libnginx-mod-http-geoip2_1.18.0-9_amd64.deb
-Size: 33936
-MD5sum: 56e4035ae8a2e182c422952ddf1403cb
-SHA1: bcd1e53b594eac6df46b27c935b9a391dc831be8
-SHA256: 3d91535c78a38dc971a953a3dc33281a14f9dbda89468601bbc6fb2baec5531d
+Size: 33924
+MD5sum: d5432f17ad596fb4e1918e2611218977
+SHA1: e21b85cec20c057ba7b9e1cbfdcc36535f42b9ba
+SHA256: 14c96c12a78e7572cb6872c39eb665ef6d6784cb7198603a8d956b2deb319894
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -173,10 +173,10 @@ Installed-Size: 81
 Depends: nginx-common (= 1.18.0-9), libc6 (>= 2.14)
 Recommends: nginx
 Filename: ./libnginx-mod-http-headers-more-filter_1.18.0-9_amd64.deb
-Size: 37576
-MD5sum: 6f217812f5b2d5db8dd30a0e30d79bab
-SHA1: e89c4fdf147df580e8fbd0d61d8525d9668fcf1a
-SHA256: f064f9799af9125bbf165706f8ffaa9bc6511f4729c1fd72788ffde5f7759ba1
+Size: 37568
+MD5sum: 11295e323503e49d22da4b0cae55fd83
+SHA1: 7695955cd097901a46322731a1daacd8f3c382fa
+SHA256: 4c6c25e46017266000b71997c5a664f1a3d721161cd939c3f4ed0d89e64987bb
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -197,10 +197,10 @@ Installed-Size: 77
 Depends: nginx-common (= 1.18.0-9), libc6 (>= 2.14), libgd3 (>= 2.1.0~alpha~)
 Recommends: nginx
 Filename: ./libnginx-mod-http-image-filter_1.18.0-9_amd64.deb
-Size: 36472
-MD5sum: 470c39086f2c5e970d279840d8e3ff28
-SHA1: 5ab755b607f1622b892b6375bf2f725b527a034b
-SHA256: 437fd69fbc87f93c626f6423f030344de829ed80a7de526c7d76e1fc0cc638b7
+Size: 36456
+MD5sum: d664ab39f43e5215acecb248e6a03150
+SHA1: 623bf72baf5d7b13fbd7b266e9d636810f524778
+SHA256: efa85b2fcb985a5f1f11e7a37facc9a775018f6be3c692261ff257ac6aa74fcd
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -220,10 +220,10 @@ Installed-Size: 446
 Depends: libnginx-mod-http-ndk (= 1.18.0-9), nginx-common (= 1.18.0-9), libc6 (>= 2.14), libluajit-5.1-2 (>= 2.0.4+dfsg)
 Recommends: nginx
 Filename: ./libnginx-mod-http-lua_1.18.0-9_amd64.deb
-Size: 166040
-MD5sum: 80e17788487805c34b40c815927c255a
-SHA1: 95bbb373a54e5447d535419754d80f3bb55dc78d
-SHA256: 46c6b30240fb647c80434fdbe6cde16bbcfe7d50463d8edab5add73197bf4982
+Size: 166032
+MD5sum: e9c5826a53b758ac21092616cb5d1b30
+SHA1: 76abcaf242255b311c63605447f9d0525f3ce0e9
+SHA256: 78b2dea4eb3f8902436b340957d768c82f740766debf7475649674908916b6a7
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -244,10 +244,10 @@ Installed-Size: 64
 Depends: nginx-common (= 1.18.0-9), libc6 (>= 2.4)
 Recommends: nginx
 Filename: ./libnginx-mod-http-ndk_1.18.0-9_amd64.deb
-Size: 32492
-MD5sum: 2085e91d6e14b58a1aebaec629feb2c6
-SHA1: e24ff6775d74dbf3c721f577ee696ebba7817634
-SHA256: 951b304ab9d8683c26bbc746f627ea9bd3b023ffcfe6c8b2e57a9dcfb5830abc
+Size: 32480
+MD5sum: dd4b9490bd138e4ddc7d76a28d427ed2
+SHA1: 09983646bc8e2b12c549260346ecb6796823f430
+SHA256: 01088acaf113daa0324457304dbce6b71928f23840ff4ae09488d26a599d1317
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -271,10 +271,10 @@ Depends: nginx-common (= 1.18.0-9), perl, perlapi-5.30.0, libc6 (>= 2.14), libpe
 Recommends: nginx
 Replaces: nginx-extras (<< 1.9.14-1)
 Filename: ./libnginx-mod-http-perl_1.18.0-9_amd64.deb
-Size: 44928
-MD5sum: 95445bcd68e7c31ebcb95e1296c145a6
-SHA1: db540634e3294907f9b040f136f826e0c9975857
-SHA256: d7da98c54e32241f737c7b10d0fa1402f3e55aa75314acb22bc923dc383d4577
+Size: 44920
+MD5sum: 0b1be778d3b612c4295349f8b0f504f4
+SHA1: 520c9616365c5acf9004976db48904c8af5f077b
+SHA256: e0dbe750cceed88e026e8ff550d90285d99de3a1eda3f6282728b96721e6220e
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -295,10 +295,10 @@ Installed-Size: 68
 Depends: nginx-common (= 1.18.0-9), libc6 (>= 2.14)
 Recommends: nginx
 Filename: ./libnginx-mod-http-subs-filter_1.18.0-9_amd64.deb
-Size: 34472
-MD5sum: e633ceef13fb471d89d94801ef44891b
-SHA1: 76653ebadfc4732653094ace28b543d502d12a54
-SHA256: 0b6efe509db44ac2488797d611596973d86a77fd0b2a611809fefb2bb01fa7c5
+Size: 34460
+MD5sum: 092b5710a4e45e36ed04cedddb5538bb
+SHA1: 12662f0b656fb9d4cc9a3ef708c82d3f2b7e2450
+SHA256: f5264aebc8357622612a57f570a698501cb09d3393637ea3fc73031699e64df9
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -317,10 +317,10 @@ Installed-Size: 81
 Depends: nginx-common (= 1.18.0-9), libc6 (>= 2.14)
 Recommends: nginx
 Filename: ./libnginx-mod-http-uploadprogress_1.18.0-9_amd64.deb
-Size: 36792
-MD5sum: a14e2e7aa7ef523f096d9c88dc4adb05
-SHA1: 9a79a161d9c6c0591a1092769390f4258abf611e
-SHA256: 4fafa103d574393ab9b6ef3d347b93a7161ab9403fe176d5f8b0a35ebb694aff
+Size: 36776
+MD5sum: 4fc8ac7731dc123318e96d0245f80df6
+SHA1: b99638487ba729ce5e0e4870bb6618a98a451382
+SHA256: d15b3ab26e1d56358f13866e8290f111603da16e00cf863249cf297f2e32d545
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -341,10 +341,10 @@ Installed-Size: 68
 Depends: nginx-common (= 1.18.0-9), libc6 (>= 2.4)
 Recommends: nginx
 Filename: ./libnginx-mod-http-upstream-fair_1.18.0-9_amd64.deb
-Size: 34556
-MD5sum: e961fc21bbec0ffafe9f989e846fa63a
-SHA1: 567df91835788f8b16675e8fe2934d626e72514e
-SHA256: 2a7f77b7b441dbf52de8877c93271691c5d884997455a4ab119b74c7f2c58f5d
+Size: 34544
+MD5sum: 09c2d31818a705885bf9ce1c9c3011b7
+SHA1: 4613f49033a99f85c2837ea16fde73100455866b
+SHA256: 01fb633e7a7352cecde1728cc6ac638cf71dc595672d28895185d290d698324e
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -362,10 +362,10 @@ Installed-Size: 72
 Depends: nginx-common (= 1.18.0-9), libc6 (>= 2.14), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25)
 Recommends: nginx
 Filename: ./libnginx-mod-http-xslt-filter_1.18.0-9_amd64.deb
-Size: 34860
-MD5sum: 95d4ef6d7258aec9ea7af537b0148b2d
-SHA1: 8c0935c4254dbe290f40bf88a4839dbaa90205ca
-SHA256: 02b996c9e4a1d5c92d2f030c19b66be1ee200150539b4e9bb4806b8444596de5
+Size: 34852
+MD5sum: 37e0056a8b256e0a885975a610a80435
+SHA1: 12801d9d88006426ab14bfef10fef4a9fc335ade
+SHA256: 257998eb8a24b3fda075e5be53a9f93019d446b985fcbd95edfcc27ae9cc97d0
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -385,10 +385,10 @@ Installed-Size: 151
 Depends: nginx-common (= 1.18.0-9), libc6 (>= 2.14)
 Recommends: nginx
 Filename: ./libnginx-mod-mail_1.18.0-9_amd64.deb
-Size: 62084
-MD5sum: 53a7bcb32874df5fac23f49e88abd5e4
-SHA1: 6c11bb24728246703e8d03bffe64395e61749897
-SHA256: db7f16f895a30d27833b8f47cdccd7ea5f935cb6ad32fd5040a123f35934741c
+Size: 62048
+MD5sum: 440e56437b56830000b0a7b92b69015b
+SHA1: bb76bd5a7270639e566cf8c609e62444c7c1e010
+SHA256: 83c5f97689b6bd93c7087ab55dccd1bd385a5c0919f1a2616e00bdf592b94f88
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -407,10 +407,10 @@ Installed-Size: 702
 Depends: nginx-common (= 1.18.0-9), libc6 (>= 2.29)
 Recommends: nginx
 Filename: ./libnginx-mod-nchan_1.18.0-9_amd64.deb
-Size: 249048
-MD5sum: c9d63a2b37a83f0b52d4c140323e18a7
-SHA1: caa7914e4bade41d4580fc9eef7d1fdcfb7d2ba4
-SHA256: e60e8e0a727d12a213393d174090f65640fe8b027dbbde44d46cf1608c194cc1
+Size: 249040
+MD5sum: df23a30adbf5c3fa5bed830a4bc7fdb8
+SHA1: 21f1237784f01d205b2bb99eaeb14c03b0f84c42
+SHA256: b77c45c224a9e587253cb1ce2c1bbca9bcc007007c1582c82abee3b54e065f28
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -433,10 +433,10 @@ Installed-Size: 344
 Depends: nginx-common (= 1.18.0-9), libc6 (>= 2.28)
 Recommends: nginx
 Filename: ./libnginx-mod-rtmp_1.18.0-9_amd64.deb
-Size: 131480
-MD5sum: 56580c16dd3c1c57985848528c46d38d
-SHA1: 999165c288ed8d9915f974c58ea81a0165e0cab8
-SHA256: 8df2973ad891feacff41cd945fde3c5150adff0baa98a6144d4d6666f525a7d5
+Size: 131472
+MD5sum: 4270a5811ce73b166b508695b31acf23
+SHA1: 830d1bacc47254c596adb8e510ddc82b2d1e341e
+SHA256: cc878c3ef6c8838dac3cb12d6622cd8a3d6e82e20ae02413b0d17ef668e83729
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -460,10 +460,10 @@ Installed-Size: 218
 Depends: nginx-common (= 1.18.0-9), libc6 (>= 2.14)
 Recommends: nginx
 Filename: ./libnginx-mod-stream_1.18.0-9_amd64.deb
-Size: 85528
-MD5sum: 34d685cf39655b48a625b7e10a4dbe80
-SHA1: 030623e4a55c62cca63127009918f9a50520c990
-SHA256: 511af7c2c5a59a0b9b22496d27889813f7b425886359d82fc10c011a2ddc65b7
+Size: 85524
+MD5sum: 9ded2d3ae66991f50024dd60da7d225f
+SHA1: b612cbd9c4e22267462b2a477457a46f642f2510
+SHA256: 3c153697acc5f08067ffb6ea69efdbce7fe1568b176d8eb30b2654e43791ad25
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -483,10 +483,10 @@ Installed-Size: 69
 Depends: nginx-common (= 1.18.0-9), libc6 (>= 2.14), libgeoip1 (>= 1.6.12), libnginx-mod-stream (= 1.18.0-9)
 Recommends: nginx
 Filename: ./libnginx-mod-stream-geoip_1.18.0-9_amd64.deb
-Size: 32704
-MD5sum: 1e77b86eb4a2ab34fb58c1e66650763b
-SHA1: ee8457396603c0d9799b1fc9ebc0258314238842
-SHA256: 1ea3e6a7ec286fc946fe1937dee94bcef4b87e545d9a2b6f82ffb10b1ea39754
+Size: 32696
+MD5sum: 848cebcee83e7dd6a8fd0261c96ee550
+SHA1: a035519d0d9c928cb2d46c399c3164650ba69403
+SHA256: 75ee15e313504acfed22aa6d96ebc9abcb2276b1ba24833cee95afc5367585e2
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -506,10 +506,10 @@ Installed-Size: 68
 Depends: nginx-common (= 1.18.0-9), libc6 (>= 2.14), libmaxminddb0 (>= 1.0.2), libnginx-mod-stream (= 1.18.0-9)
 Recommends: nginx
 Filename: ./libnginx-mod-stream-geoip2_1.18.0-9_amd64.deb
-Size: 33528
-MD5sum: 6f203a3faea94d0133403de75570eae7
-SHA1: 3b75e0d290d80cefecacf0130c198bd874dcf2aa
-SHA256: fef940f4aec720104e67750a40035b3310b38c7af2750a58b176eb1cc9dee17f
+Size: 33516
+MD5sum: 62fe7f7fbf7a45d7c9bc25856901c91e
+SHA1: 0b13b2fc6b879350017d182af632952d2e9dc7cb
+SHA256: 7998fd3ceb4c043d48f4f2363b58f6699957f4518a257715d44f6dd7498cdba6
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -527,10 +527,10 @@ Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.
 Installed-Size: 40
 Depends: nginx-core (<< 1.18.0-9.1~) | nginx-full (<< 1.18.0-9.1~) | nginx-light (<< 1.18.0-9.1~) | nginx-extras (<< 1.18.0-9.1~), nginx-core (>= 1.18.0-9) | nginx-full (>= 1.18.0-9) | nginx-light (>= 1.18.0-9) | nginx-extras (>= 1.18.0-9)
 Filename: ./nginx_1.18.0-9_all.deb
-Size: 27848
-MD5sum: 47edcb20fe35f119ff755e11f659f048
-SHA1: 44ebf2dc4ccd0efe1b11c230a0b64c726c677d3a
-SHA256: e766314ab4bb45a4c2648afba3239977f98bce45c3b75962fa9267dcc9968cfe
+Size: 27840
+MD5sum: 79d73c57d08313ad4499d688feb5d881
+SHA1: cb950c2754066f4bd4fe6c9274b3936f9bdb2182
+SHA256: e8d4fd26f02e0db3a574b2f4fbe225b2d6f15728d9e027a122180b2981771de3
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -551,10 +551,10 @@ Installed-Size: 271
 Depends: lsb-base (>= 3.0-6), debconf (>= 0.5) | debconf-2.0
 Suggests: fcgiwrap, nginx-doc, ssl-cert
 Filename: ./nginx-common_1.18.0-9_all.deb
-Size: 60476
-MD5sum: 360110e75f95989f20281dde4a6de7fd
-SHA1: 7ae7c3153b53edaa72e59c0ff7df715c38c3c488
-SHA256: 044e88ba4f8079596fab2d17ce8f2b97776832f927c7312e0ebf8e5b0abab0a9
+Size: 60472
+MD5sum: 23ce18c172ec3e5b562802581d304aa5
+SHA1: 6a0b86138f6338e29563a7ff15baa62f33b06afc
+SHA256: 8b6f14dd15d4f0e41d7b3478fdb4b49c649f439b295920baa902e7b656389035
 Section: httpd
 Priority: optional
 Multi-Arch: foreign
@@ -581,9 +581,9 @@ Replaces: nginx-full (<< 1.18.0-1)
 Provides: httpd, httpd-cgi, nginx
 Filename: ./nginx-core_1.18.0-9_amd64.deb
 Size: 3890460
-MD5sum: cfc16aba732a0a181c2200a3f4d7613e
-SHA1: 108c7b300663c9a7a795ac834c2d93ad873a9f39
-SHA256: 691a4de5d3e917ebc1a16ed5d0c021a096c21baa436320060171279619b98207
+MD5sum: a056d8018b174bdae09d2c1022b8866e
+SHA1: d7361c379c35b2f57086bc85db8da836252b1acb
+SHA256: d31f90e4695a31c305df5e0be4f01c80eac2770c5e6765cc912866fa361ea428
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -616,10 +616,10 @@ Architecture: all
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Installed-Size: 75
 Filename: ./nginx-doc_1.18.0-9_all.deb
-Size: 36716
-MD5sum: a0a642753cba3b80c8a0c7517a7d213c
-SHA1: be2e290c137e49226d24e3ddc991c8453d8987eb
-SHA256: a9932053616367d86db91bc5e7b8a68c2ca1c83a5a4a160a10112e9590fe4b03
+Size: 36708
+MD5sum: fd83e7d06c4e7066054ae0a5118ea65d
+SHA1: 493d87bd44dc7cd90eadf6ac58c0bb749c5c4afd
+SHA256: 3258b7af5522d4a594f52766b2499ad30a58c24392010d13649fc8907d10bdc6
 Section: doc
 Priority: optional
 Multi-Arch: foreign
@@ -643,10 +643,10 @@ Conflicts: nginx-core, nginx-light
 Breaks: nginx (<< 1.4.5-1)
 Provides: httpd, httpd-cgi, nginx
 Filename: ./nginx-extras_1.18.0-9_amd64.deb
-Size: 3900840
-MD5sum: 1719e720148e8da17acf4f3fa955a12b
-SHA1: ea8d136cf9f9e6b00f575f9489ae4bc85556c175
-SHA256: 7d7289124f64d259419e20e517ae28b26d2a7480ca932e7a4c85ee1a75c9d0f1
+Size: 3900832
+MD5sum: 8a0d27fcf3cdb1fa799c38be7e69789a
+SHA1: a044451005f43ec57877bcf65bb06311f407af16
+SHA256: 47adc4d3380ff5351834c624b61c3cfd3dc1518a909c828d2000c2996b53b25f
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -687,10 +687,10 @@ Suggests: nginx-doc (= 1.18.0-9)
 Breaks: nginx (<< 1.4.5-1)
 Provides: httpd, httpd-cgi, nginx
 Filename: ./nginx-full_1.18.0-9_all.deb
-Size: 28348
-MD5sum: 1035cfb9eeed2b2449b1e9a972214b15
-SHA1: d669e5b22eddbc18ec2c28a6264f6540116137ce
-SHA256: 7e9b3d267e2ea72218a443518902947769f7f880f6405c94db5107c74e72124d
+Size: 28332
+MD5sum: b9c78aaeeb451b7888b9f76c028c91f5
+SHA1: 996e07111fbfd85c07920cfd7d60538f5e087307
+SHA256: bb29c8b8fa05c13a0327289f0f917ae6371a692618cdf810615900af86196d34
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
@@ -732,9 +732,9 @@ Breaks: nginx (<< 1.4.5-1)
 Provides: httpd, httpd-cgi, nginx
 Filename: ./nginx-light_1.18.0-9_amd64.deb
 Size: 3868684
-MD5sum: 6e562426d68bd317a93eeaec8d9d8a34
-SHA1: e7179a1ecdf654289c2cbaa5d3e7e05424d8966b
-SHA256: 5e490c24f4cdf2f79855bbaae761286a0821a3f7657912fa1f1ed716987dd1c3
+MD5sum: b9aa62d825285cdbad49d16309d333d5
+SHA1: 0e116661d7139cedd30794f508601841208b808b
+SHA256: c8783f635bcb99da7806d8a30f65ad6b37ce81f09798922c094ce784399d7e19
 Section: httpd
 Priority: optional
 Homepage: https://nginx.org
