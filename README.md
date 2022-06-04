@@ -36,7 +36,7 @@ To prevent other sources from overwriting NGINX during updates, pin it by creati
 
 ```
 Package: *
-Pin: origin https://nginx-pagespeed.knyz.org/
+Pin: origin nginx-pagespeed.knyz.org
 Pin-Priority: 900
 ```
 
