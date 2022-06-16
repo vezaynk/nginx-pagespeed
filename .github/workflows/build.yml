@@ -30,7 +30,8 @@ jobs:
                               libgd-dev libgeoip-dev libhiredis-dev
                               libluajit-5.1-dev libmaxminddb-dev
                               libmhash-dev libpam0g-dev
-                              libpcre3-dev libperl-dev
+                              libpcre3-dev libpcre2-dev
+                              libperl-dev libpcre++-dev
                               libssl-dev libxslt1-dev
                               po-debconf quilt 
                               zlib1g-dev dpkg-dev libexpat-dev
