@@ -41,8 +41,8 @@ jobs:
         run: |
           git clone https://salsa.debian.org/nginx-team/nginx.git
           cd nginx
-          #NGINX_TAG=$(git describe --tags `git rev-list --tags` | grep upstream | head -n 1)
-          #git checkout $NGINX_TAG
+          NGINX_TAG=$(git describe --tags `git rev-list --tags` | grep upstream | head -n 1)
+          git checkout $NGINX_TAG
           cd debian/modules
           git clone https://github.com/apache/incubator-pagespeed-ngx.git
           cd incubator-pagespeed-ngx
