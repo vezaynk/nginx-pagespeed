@@ -12,12 +12,13 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-22.04, ubuntu-20.04]
+        flavor: [nginx-light, nginx-full, nginx-extras]
         
     runs-on: ${{ matrix.os }}
 
     steps:
       - uses: actions/checkout@v3
-      - name: Install nginx-pagespeed
+      - name: Install nginx-pagespeed ${{ matrix.flavor }}
         run: |
           sudo bash install.sh
           sudo cp pagespeed.conf.sample /etc/nginx/conf.d/pagespeed.conf
