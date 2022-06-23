@@ -50,6 +50,16 @@ jobs:
           echo `echo wget -O psol.tar.gz; cat PSOL_BINARY_URL` | BIT_SIZE_NAME=x64 bash
           tar -xzvf psol.tar.gz
           
+      # Temporary fix for #2
+      - name: Update http-subs-filter (temporary fix)
+        run: |
+           git init
+           git clean -d -f
+           git remote add origin https://github.com/yaoweibin/ngx_http_substitutions_filter_module
+           git pull origin master
+           
+        working-directory: nginx/debian/modules/http-subs-filter
+
       - name: Patch rules
         run: |
            sed -i 's/\-\-with\-threads/\-\-with-threads \-\-add\-module=\$(MODULESDIR)\/incubator\-pagespeed\-ngx/' rules
