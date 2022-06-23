@@ -19,4 +19,7 @@ jobs:
       - name: Test configuration
         run: |
           sudo systemctl restart nginx
-          sudo nginx -T
+          if [[ ! `sudo nginx -T | grep 'pagespeed on'` ]]; then
+            echo "Error: pagespeed is not included";
+            exit 1;
+          fi
