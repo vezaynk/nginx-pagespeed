@@ -1,5 +1,11 @@
 # NGINX + Google PageSpeed
 
+[![Build](https://github.com/knyzorg/nginx-pagespeed/actions/workflows/build.yml/badge.svg)](https://github.com/knyzorg/nginx-pagespeed/actions/workflows/build.yml)
+[![Deploy to Dokku](https://github.com/knyzorg/nginx-pagespeed/actions/workflows/deploy.yml/badge.svg)](https://github.com/knyzorg/nginx-pagespeed/actions/workflows/deploy.yml)
+[![Health Check](https://github.com/knyzorg/nginx-pagespeed/actions/workflows/health-check.yml/badge.svg)](https://github.com/knyzorg/nginx-pagespeed/actions/workflows/health-check.yml)
+
+
+
 Configuring NGINX to build correctly is a pain. Not because of anything wrong with it, but rather because of how slim the standard install is: no HTTPS, no Web-Sockets, no PAM, etc., since they are all independent modules. While this is sound in principle, it's inconvenient for end-users.
 
 Luckily, most distributions fork it, make a few changes and bundle it with everyone's favorite modules. Installing NGINX from your distribution's repositories will always give you a batteries-included configuration. This convenience presents a dilemma: either accept what your distribution gives you and lose the flexibility of customizing your installation or bite the bullet and try to figure everything out yourself.
@@ -64,3 +70,20 @@ pagespeed RewriteLevel CoreFilters;
 ```
 
 Remember to run `sudo systemctl reload nginx` after any changes.
+
+
+# Repository Status
+
+This repository is largely autonomous, and self-reports important information.
+
+## Health Check [![Health Check](https://github.com/knyzorg/nginx-pagespeed/actions/workflows/health-check.yml/badge.svg)](https://github.com/knyzorg/nginx-pagespeed/actions/workflows/health-check.yml)
+
+Health check is the most important flag. If it is failing, it means that a broken build has been pushed into the repository. If this ever happens, this is a SEV-1, which will notify me and I will roll it back as soon as possible.
+
+## Deploy to Dokku [![Deploy to Dokku](https://github.com/knyzorg/nginx-pagespeed/actions/workflows/deploy.yml/badge.svg)](https://github.com/knyzorg/nginx-pagespeed/actions/workflows/deploy.yml)
+
+The repository is hosted on my company's Dokku server. The Deploy to Dokku flag indicates whether the packages are successfully being pushed upstream. Failure likely indicates that the server is offline for some reason, but will be back soon! The package can be installed directly from this repository in the meantime.
+
+## Build [![Build](https://github.com/knyzorg/nginx-pagespeed/actions/workflows/build.yml/badge.svg)](https://github.com/knyzorg/nginx-pagespeed/actions/workflows/build.yml)
+
+Is this green? If it is, that means that the current Debian upstream is building correctly. If it is red, then it means that updates are not being produced.
