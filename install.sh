@@ -15,4 +15,6 @@ echo "pagespeed FileCacheCleanIntervalMs 3600000;" >> /etc/nginx/conf.d/pagespee
 echo "pagespeed FileCacheInodeLimit 500000;" >> /etc/nginx/conf.d/pagespeed.conf
 echo "pagespeed RewriteLevel CoreFilters;" >> /etc/nginx/conf.d/pagespeed.conf
 
+systemctl enable nginx
+systemctl start nginx
 systemctl reload nginx
