@@ -15,7 +15,8 @@ jobs:
         run: |
           bash install.sh
           sudo cp pagespeed.conf.sample /etc/nginx/conf.d/pagespeed.conf
-        working-directory: nginx-pagespeed
         
       - name: Test configuration
-        run: nginx -T
+        run: |
+          sudo systemctl reload nginx
+          nginx -T
