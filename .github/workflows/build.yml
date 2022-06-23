@@ -75,9 +75,9 @@ jobs:
 
       - name: Checkout current repository
         uses: actions/checkout@v2.4.0
-#         To dispatch with a push
-#         with:
-#           path: 'repo'
+        with:
+          path: 'repo'
+#           # To dispatch with a push
 #           token: ${{ secrets.PAT }}
           
       - name: Move packages to repository
