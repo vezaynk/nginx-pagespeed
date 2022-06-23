@@ -75,9 +75,10 @@ jobs:
 
       - name: Checkout current repository
         uses: actions/checkout@v2.4.0
-        with:
-          path: 'repo'
-          token: ${{ secrets.PAT }}
+#         To dispatch with a push
+#         with:
+#           path: 'repo'
+#           token: ${{ secrets.PAT }}
           
       - name: Move packages to repository
         run: mkdir -p repo/dist && mv *.deb repo/dist
