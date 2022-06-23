@@ -1,0 +1,67 @@
+# There is currently a breakage somewhere along the way of building the package the usual way
+# See issue: https://github.com/knyzorg/nginx-pagespeed/issues/2
+# I don't know what it happens, but getting the latest http-subs-filter
+# and removing the patches makes it work again.
+# The purpose of this action is to watch master, and wait until it passes 
+# again in order to revert the change.
+
+name: Classic Build
+
+# Controls when the workflow will run
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '0 12 * * *'
+    
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-20.04
+    #container: ubuntu:21.04
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Update apt
+        run: sudo apt-get -y update
+        
+      - name: Upgrade apt
+        run: sudo apt-get -y upgrade
+      # Runs a set of commands using the runners shell
+      - name: Install dependencies
+        run: sudo apt install -y debhelper/focal-backports libdebhelper-perl/focal-backports 
+                              libgd-dev libgeoip-dev libhiredis-dev
+                              libluajit-5.1-dev libmaxminddb-dev
+                              libmhash-dev libpam0g-dev
+                              libpcre3-dev libpcre2-dev
+                              libperl-dev libpcre++-dev
+                              libssl-dev libxslt1-dev
+                              po-debconf quilt 
+                              zlib1g-dev dpkg-dev libexpat-dev
+                              wget git gpg
+                              
+      - name: Download all resources
+        run: |
+          git clone https://salsa.debian.org/nginx-team/nginx.git
+          cd nginx
+          #NGINX_TAG=$(git describe --tags `git rev-list --tags` | grep debian | head -n 1)
+          #git checkout $NGINX_TAG
+          cd debian/modules
+          git clone https://github.com/apache/incubator-pagespeed-ngx.git
+          cd incubator-pagespeed-ngx
+          git checkout tags/latest-stable
+          echo `echo wget -O psol.tar.gz; cat PSOL_BINARY_URL` | BIT_SIZE_NAME=x64 bash
+          tar -xzvf psol.tar.gz
+        
+      - name: Patch rules
+        run: |
+           sed -i 's/\-\-with\-threads/\-\-with-threads \-\-add\-module=\$(MODULESDIR)\/incubator\-pagespeed\-ngx/' rules
+           sed -i 's/\-\-with\-debug//' rules
+           
+        working-directory: nginx/debian
+
+      - name: Build Package
+        run: sudo dpkg-buildpackage -rfakeroot -uc -b
+        working-directory: nginx
