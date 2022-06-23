@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 
-sudo su
+[ `whoami` = root ] || exec su -c $0 root
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8028BE1819F3E4A0
 echo "deb https://nginx-pagespeed.knyz.org/dist/ /" > /etc/apt/sources.list.d/nginx-pagespeed.list
 echo "Package: *" > /etc/apt/preferences.d/99nginx-pagespeed
