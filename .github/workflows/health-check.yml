@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Install nginx-pagespeed
         run: |
-          bash install.sh
+          sudo bash install.sh
           sudo cp pagespeed.conf.sample /etc/nginx/conf.d/pagespeed.conf
         
       - name: Test configuration
