@@ -78,7 +78,9 @@ This repository is largely autonomous, and self-reports important information.
 
 ## Health Check [![Health Check](https://github.com/knyzorg/nginx-pagespeed/actions/workflows/health-check.yml/badge.svg)](https://github.com/knyzorg/nginx-pagespeed/actions/workflows/health-check.yml)
 
-Health check is the most important flag. If it is failing, it means that a broken build has been pushed into the repository. If this ever happens, this is a SEV-1, which will notify me and I will roll it back as soon as possible.
+Health check is the most important flag. If it is failing, it means that a broken build may have been pushed into the repository. Inspect the CI to see if it's a real issue.
+
+Currently, `nginx-extras` is failing. This is not new. Only the check is.
 
 ## Deploy to Dokku [![Deploy to Dokku](https://github.com/knyzorg/nginx-pagespeed/actions/workflows/deploy.yml/badge.svg)](https://github.com/knyzorg/nginx-pagespeed/actions/workflows/deploy.yml)
 
